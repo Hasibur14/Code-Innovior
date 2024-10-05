@@ -17,7 +17,7 @@ const ErrorPage = () => {
                     </p>
 
                     <div className='flex items-center mt-6 gap-x-3'>
-                        <button className='flex items-center justify-center w-1/2 px-5 py-3 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto hover:bg-gradient-to-r from-purple-500 to-fuchsia-600 border-purple-600 hover:text-white'>
+                        <button className='flex items-center justify-center w-1/2 px-5 py-3 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto hover:bg-gradient-to-r from-green-500 to-green-600 border-green-600 hover:text-white'>
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 fill='none'
@@ -36,7 +36,7 @@ const ErrorPage = () => {
                             <Link to='/'>Go back</Link>
                         </button>
 
-                        <Link to='/' className='w-1/2 px-5 py-4 text-sm tracking-wide text-white transition-colors duration-200 bg- bg-gradient-to-r from-purple-500 to-fuchsia-600 border-purple-600 rounded-lg shrink-0 sm:w-auto hover:bg-gray-600'>
+                        <Link to='/' className='w-1/2 px-5 py-4 text-sm tracking-wide text-white transition-colors duration-200 bg- bg-gradient-to-r from-green-500 to-green-600 border-green-600 rounded-lg shrink-0 sm:w-auto hover:bg-gray-600'>
                             Take me home
                         </Link>
                     </div>

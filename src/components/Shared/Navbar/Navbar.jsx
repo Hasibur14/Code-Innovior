@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-black ">
-            <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-2">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-2">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
                         <img className='' src={logo1} alt="code innovior" />
