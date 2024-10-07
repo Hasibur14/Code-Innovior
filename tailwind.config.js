@@ -7,11 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mondo: ['Monda', 'sans-serif'], 
+        mondo: ['Monda', 'sans-serif'],
+        mono: ['Share Tech Mono', 'monospace'],
       },
     },
   },
   plugins: [
-    require('daisyui'), 
+    require('daisyui'),
   ],
 }

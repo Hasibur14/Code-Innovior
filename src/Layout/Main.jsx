@@ -6,16 +6,12 @@ import Navbar from "../components/Shared/Navbar/Navbar";
 
 const Main = () => {
     return (
-        <div className="font-lato">
-            <div className="h-12">
-                <Navbar />
-            </div>
+        <div>
+            <Navbar />
             <div className="min-h-[calc(100vh-465px)]">
                 <Outlet></Outlet>
             </div>
-            <div>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 };

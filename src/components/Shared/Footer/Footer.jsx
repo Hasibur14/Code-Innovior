@@ -27,7 +27,7 @@ const coursesGroup2 = [
 
 const CourseList = ({ courses }) => {
     return (
-        <div className="mb-4 md:mb-0">
+        <div className="mb-4 md:mb-0 ">
             <h2 className="text-xl md:text-3xl mb-5">Courses</h2>
             <ul className="text-[18px] space-y-3">
                 {courses?.map((course, index) => (
@@ -60,7 +60,7 @@ const SocialLinks = () => (
 const Footer = () => {
     return (
         <footer
-            className="bg-slate-900 text-white py-6 font-mondo"
+            className="bg-slate-900 text-white py-6 font-mondo mt-1"
             // style={{
             //     opacity: 0.3,
             //     background: `linear-gradient(0deg, rgba(46, 179, 145, 0.20) 0%, rgba(46, 179, 145, 0.20) 100%), url(${footerImage}) lightgray 50% / cover no-repeat`
