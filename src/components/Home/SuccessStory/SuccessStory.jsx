@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa6";
+import successBg from "../../../assets/success.png";
 import Modal from "../../Modal/SuccessModal.jsx";
-import successBg from "../../../assets/success.png"
 
 const SuccessStory = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,18 +40,23 @@ const SuccessStory = () => {
     };
 
     return (
-        <div className="relative flex justify-center items-center h-[500px] overflow-hidden py-24 font-mondo"
+        <div 
+            className="relative flex flex-col justify-center h-[1064px] items-center overflow-hidden  font-mondo"
             style={{
                 backgroundImage: `url(${successBg})`,
-                height: '200px',
-                width: '100%',
                 backgroundPosition: 'center',
-                marginLeft: '40px'
-            }}>
-            <h2 className="absolute mr-20 mb-4 text-3xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
-            Success_ Story
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                width: '100%',
+                height: '1064px',
+            }}
+        >
+            {/* Adjust heading to be above the testimonial cards */}
+            <h2 className="mb-12 text-3xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
+                Success_Story
             </h2>
-            <div className="flex gap-10">
+            {/* Testimonial cards */}
+            <div className="flex gap-10 overflow-hidden w-full mt-36 px-5 justify-center">
                 {dataInfo?.map((testimonial, index) => (
                     <div
                         key={testimonial.id}
@@ -99,6 +104,8 @@ const SuccessStory = () => {
 };
 
 export default SuccessStory;
+
+
 
 
 

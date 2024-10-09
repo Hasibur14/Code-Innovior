@@ -1,22 +1,22 @@
-import bgImage from "../../../assets/aboutkids.png";
+import bgImage from "../../../assets/aboutKids.png";
 import mobileImage from "../../../assets/mobile.png";
 const About = () => {
     return (
         <div>
-            <div className="py-12 text-center">
+            <div className=" text-center">
                 <h2 className="text-2xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent  bg-gradient-to-r from-[#CAFFF1] to-[#05B689]">
                     Are you Worried About_Kids?
                 </h2>
             </div>
-            <div className="relative text-white md:py-16  h-[1456px] px-2 md:px-16 lg:px-24"
+            <div className="relative text-white md:py-16  h-[1476px] px-2 md:px-16 lg:px-24"
                 style={{
                     backgroundImage: `url(${bgImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}>
-                <div className="absolute md:mx-[88px] font-mono md:flex items-center justify-center ">
-                    <img className="md:h-[1050px] w-[875px] mt-44"
+                <div className="absolute md:mx-[155px] font-mono md:flex items-center justify-center ">
+                    <img className="md:h-[900px] w-[780px] mt-44"
                         src={mobileImage} alt="code Innovior" />
 
                     <div className="px-2 md:px-0 mt-32">
