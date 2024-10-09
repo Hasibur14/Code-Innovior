@@ -1,8 +1,8 @@
 import React from 'react';
 import courseBg from "../../../assets/courseBg.png";
-import webDev from "../../../assets/webDev.mp4"
-import uiUx from "../../../assets/uiUx.mp4"
-import web from "../../../assets/web.mp4"
+import uiUx from "../../../assets/uiUx.mp4";
+import web from "../../../assets/web.mp4";
+import webDev from "../../../assets/webDev.mp4";
 
 const OurCourse = () => {
     return (
@@ -68,7 +68,7 @@ const OurCourse = () => {
                         <div className="md:w-1/2 p-6">
                             <div className="bg-gradient-to-r from-[#003FB4] to-[#6c97e8] rounded-3xl p-4 md:p-6">
                                 <video className="w-full h-full rounded-lg" controls>
-                                    <source src={webDev} type="video/mp4" />
+                                    <source src={uiUx} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                                 <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-bold mt-4">Professional UI/UX Design</h3>
@@ -81,7 +81,7 @@ const OurCourse = () => {
                         <div className="md:w-1/2 p-6">
                             <div className="bg-gradient-to-r from-[#4B1A50] to-[#B300C6] rounded-3xl p-4 md:p-6">
                                 <video className="w-full h-full rounded-lg" controls>
-                                    <source src={webDev} type="video/mp4" />
+                                    <source src={web} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                                 <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-bold mt-4">
