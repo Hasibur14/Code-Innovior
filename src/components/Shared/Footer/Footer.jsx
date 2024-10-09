@@ -60,7 +60,7 @@ const SocialLinks = () => (
 const Footer = () => {
     return (
         <footer
-            className="bg-slate-900 text-white py-6 font-mondo mt-1"
+            className="bg-slate-900 text-white py-6 font-mondo "
             // style={{
             //     opacity: 0.3,
             //     background: `linear-gradient(0deg, rgba(46, 179, 145, 0.20) 0%, rgba(46, 179, 145, 0.20) 100%), url(${footerImage}) lightgray 50% / cover no-repeat`
