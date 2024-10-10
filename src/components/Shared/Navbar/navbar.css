@@ -1,4 +1,14 @@
 
+.nav-bg {
+    background-color: #17f5e6;
+    color: #fff;
+    background: transparent;
+    -webkit-backdrop-filter: blur(9.84375px);
+    backdrop-filter: blur(9.84375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .kisBtn {
     background-image: url('../../../assets/kidsBtn.png');

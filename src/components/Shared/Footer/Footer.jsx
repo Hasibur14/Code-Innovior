@@ -2,6 +2,7 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { VscDebugBreakpointData } from "react-icons/vsc";
+import footerBg from "../../../assets/footer.png";
 import logo1 from "../../../assets/logo.png";
 
 // Data for courses
@@ -60,11 +61,9 @@ const SocialLinks = () => (
 const Footer = () => {
     return (
         <footer
-            className="bg-slate-900 text-white py-6 font-mondo "
-            // style={{
-            //     opacity: 0.3,
-            //     background: `linear-gradient(0deg, rgba(46, 179, 145, 0.20) 0%, rgba(46, 179, 145, 0.20) 100%), url(${footerImage}) lightgray 50% / cover no-repeat`
-            // }}
+            className=" text-white py-6 font-mondo "
+            style={{ background: `linear-gradient(0deg, rgba(46, 179, 145, 0.20) 0%, rgba(46, 179, 145, 0.20) 100%), url(${footerBg}) lightgray 50% / cover no-repeat`
+            }}
         >
             <div className="container mx-auto md:flex  px-4 justify-between">
                 <div className="mb-4 md:mb-0 lg:w-1/3 space-y-6">
