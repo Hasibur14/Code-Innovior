@@ -14,7 +14,7 @@ const OurCourse = () => {
                 backgroundPosition: 'center'
             }}
         >
-            <div className="absolute ">
+            <div className="absolute">
                 <h2 className="font-mono md:py-44  text-3xl text-center md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
                     Our Courses_
                 </h2>

@@ -1,8 +1,8 @@
 
 import { useState } from 'react';
 import { CgMenuRightAlt } from "react-icons/cg";
-import { FiChevronDown, FiChevronUp, FiMenu, FiX } from 'react-icons/fi';
-import { NavLink } from 'react-router-dom';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { Link, NavLink } from 'react-router-dom';
 import logo1 from "../../../assets/logo.png";
 import "./navbar.css";
 
@@ -37,7 +37,9 @@ const Navbar = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-2">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
-                        <img className='' src={logo1} alt="code innovior" />
+                        <Link to="/">
+                            <img className='w-60 md:w-full' src={logo1} alt="code innovior" />
+                        </Link>
                     </div>
 
                     {/* Menu for larger screens */}
@@ -109,16 +111,16 @@ const Navbar = () => {
 
                         <div className="nav-item">
                             <NavLink
-                                to="/contact"
+                                to="/success"
                                 className={({ isActive }) => isActive ? "block  text-[#00D8A1] font-bold  active" :
                                     "block px-4 py-2  hover:bg-[#00D8A1] text-white"}
                                 onClick={handleLinkClick} >
                                 Success
                             </NavLink>
                         </div>
-                        <button className="kisBtn px-5 py-3 text-lg  ml-4 font-semibold text-white hover:scale-105 transition duration-300 ">
+                        <Link to="/" className="kisBtn px-5 py-3 text-lg  ml-4 font-semibold text-white hover:scale-105 transition duration-300 ">
                             Kids Program
-                        </button>
+                        </Link >
 
                     </div>
 
@@ -126,12 +128,12 @@ const Navbar = () => {
 
 
                     {/* Mobile Menu Icon */}
-                    <div className="md:hidden flex items-center border-2 p-1 rounded hover:bg-green-500">
+                    <div className="md:hidden flex items-center border-1 p-1 rounded bg-[#00D8A1] hover:bg-green-400">
                         <button onClick={toggleMenu}>
                             {menuOpen ? (
-                                <CgMenuRightAlt className="text-2xl text-gray-800 hover:text-white" />
+                                <CgMenuRightAlt className="text-2xl text-white" />
                             ) : (
-                                <FiMenu className="text-2xl text-gray-800 hover:text-white" />
+                                <FiMenu className="text-2xl text-white" />
                             )}
                         </button>
                     </div>
@@ -147,9 +149,9 @@ const Navbar = () => {
                 <div className="side-menu">
                     <div className="side-menu-2">
                         <div className="flex justify-between items-center p-4">
-                            <h2 className='text-3xl font-bold'>Heaven</h2>
+                            <img className='w-9/12' src={logo1} alt="code innovior" />
                             <button onClick={toggleMenu}>
-                                <FiX className="text-4xl text-black border-2 p-1 hover:bg-red-500 hover:text-white rounded" />
+                                <FiX className="text-2xl text-red-500 border-2 border-red-500  hover:bg-red-500 hover:text-white rounded" />
                             </button>
                         </div>
                         <div className="mt-4">
@@ -157,12 +159,12 @@ const Navbar = () => {
                                 to="/"
                                 onClick={handleLinkClick}
                                 className={({ isActive }) =>
-                                    isActive ? "block px-4 py-2 text-green-600 font-bold hover:bg-[#00D8A1] hover:text-white " :
+                                    isActive ? "block px-4 py-2 text-[#00D8A1] font-bold hover:bg-[#00D8A1] hover:text-white " :
                                         "block px-4 py-2 text-gray-900 "} >
                                 Home
                             </NavLink>
 
-                            <div
+                            {/* <div
                                 className={({ isActive }) =>
                                     isActive ? "block px-4 py-2 text-green-600 font-bold hover:bg-green-600 hover:text-white " :
                                         "block px-4 py-2 text-gray-900 "}>
@@ -209,39 +211,39 @@ const Navbar = () => {
                                         </NavLink>
                                     </div>
                                 )}
-                            </div>
-
-                            <NavLink
-                                to="/blog"
-                                onClick={handleLinkClick}
-                                className={({ isActive }) =>
-                                    isActive ? "block px-4 py-2 text-green-600 font-bold hover:bg-green-600 hover:text-white " :
-                                        "block px-4 py-2 text-gray-900 "} >
-                                Blog
-                            </NavLink>
+                            </div> */}
 
                             <NavLink
                                 to="/about"
                                 onClick={handleLinkClick}
                                 className={({ isActive }) =>
-                                    isActive ? "block px-4 py-2 text-green-600 font-bold hover:bg-green-600 hover:text-white " :
+                                    isActive ? "block px-4 py-2 text-[#00D8A1] font-bold hover:bg-green-600 hover:text-white " :
                                         "block px-4 py-2 text-gray-900 "} >
                                 About
                             </NavLink>
 
                             <NavLink
-                                to="/contact"
+                                to="/courses"
                                 onClick={handleLinkClick}
                                 className={({ isActive }) =>
-                                    isActive ? "block px-4 py-2 text-green-600 font-bold hover:bg-green-600 hover:text-white " :
+                                    isActive ? "block px-4 py-2 text-[#00D8A1] font-bold hover:bg-green-600 hover:text-white " :
                                         "block px-4 py-2 text-gray-900 "} >
-                                Contact
+                                Courses
+                            </NavLink>
+
+                            <NavLink
+                                to="/success"
+                                onClick={handleLinkClick}
+                                className={({ isActive }) =>
+                                    isActive ? "block px-4 py-2 text-[#00D8A1] font-bold hover:bg-green-600 hover:text-white " :
+                                        "block px-4 py-2 text-gray-900 "} >
+                                Success
                             </NavLink>
                         </div>
 
                         <div className="mt-4">
-                            <button className="w-full bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
-                                Sign Up
+                            <button className="px-5 py-3 text-lg  ml-4 font-semibold text-white hover:scale-105 transition duration-300 bg-[#00D8A1] rounded">
+                                Kids Program
                             </button>
                         </div>
                     </div>

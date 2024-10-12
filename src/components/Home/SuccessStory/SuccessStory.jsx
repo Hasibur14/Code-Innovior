@@ -40,8 +40,8 @@ const SuccessStory = () => {
     };
 
     return (
-        <div 
-            className="relative flex flex-col justify-center h-[1064px] items-center overflow-hidden  font-mondo"
+        <div
+            className="relative flex flex-col justify-center md:h-[1064px] items-center overflow-hidden  font-mondo"
             style={{
                 backgroundImage: `url(${successBg})`,
                 backgroundPosition: 'center',
@@ -49,12 +49,14 @@ const SuccessStory = () => {
                 backgroundRepeat: 'no-repeat',
                 width: '100%',
                 height: '1064px',
-            }}
-        >
-            {/* Adjust heading to be above the testimonial cards */}
-            <h2 className="mb-12 text-3xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
-                Success_Story
-            </h2>
+            }} >
+            <div className="flex  font-mono justify-center items-center  space-y-4">
+                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#CAFFF1] to-[#05B689] relative md:mb-5">
+                    Success Story_
+                    <span className="block absolute left-0 w-3/12 h-3  bg-gradient-to-r from-[#5DEDC8] to-[#005841]
+                    bottom-[-24px] md:ml-44"></span>
+                </h1>
+            </div>
             {/* Testimonial cards */}
             <div className="flex gap-10 overflow-hidden w-full mt-36 px-5 justify-center">
                 {dataInfo?.map((testimonial, index) => (

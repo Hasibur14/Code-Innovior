@@ -4,16 +4,16 @@ import missionBg from "../../../assets/ourMission.png";
 
 const OurMission = () => {
     return (
-        <div className='py-5 md:py-16 h-screen'>
+        <div className='py-5 md:py-16 md:h-screen'>
             <div className="relative flex justify-center items-center"
                 style={{
                     backgroundImage: `url(${missionBg})`,
                     height: '200px',
-                    width: '100%',
+                    width: '90%',
                     backgroundPosition: 'center',
                     marginLeft: '40px'
                 }}>
-                <h2 className="absolute mr-20 mb-4 text-3xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
+                <h2 className="absolute mb-4 text-3xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
                     Our Mission
                 </h2>
             </div>
@@ -36,7 +36,7 @@ const OurMission = () => {
                 </div>
 
             </section>
-        </div>
+        </div >
     );
 };
 
