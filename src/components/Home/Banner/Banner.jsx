@@ -1,5 +1,5 @@
-import bgImage from "../../../assets/banner.gif";
 import buttonImage from "../../../assets/button.png";
+import bgImage from "../../../assets/home/banner.gif";
 
 const Banner = () => {
     return (

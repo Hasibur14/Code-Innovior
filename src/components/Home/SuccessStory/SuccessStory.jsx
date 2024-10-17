@@ -17,6 +17,8 @@ const SuccessStory = () => {
         return () => clearInterval(slideInterval);
     }, []);
 
+    
+
     const bgColors = [
         "from-[#5D3619] to-[#120818]",
         "from-[#1D0D64] to-[#0F0620]",
