@@ -1,14 +1,14 @@
-import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import "../Shared/Navbar/navbar.css";
 
 const Modal = ({ isOpen, onClose, testimonial }) => {
     if (!isOpen || !testimonial) return null; 
 
     return (
         <dialog className="modal modal-open ">
-            <div className="modal-box  bg-[#23594c] bg-opacity-70 rounded-3xl border-2 border-green-600 md:max-w-lg md:w-full">
+            <div className="modal-box nav-bg  rounded-3xl border-2 border-green-600 md:max-w-lg md:w-full">
                 <button
-                    className="absolute top-4 right-4 flex justify-center items-center border border-red-600 text-red-500 hover:text-white hover:bg-red-500 p-1 rounded-full"
+                    className="absolute top-4 right-4 flex justify-center items-center hover:border border-red-600 hover:text-red-500 text-white bg-red-500 hover:bg-transparent p-1 rounded-full"
                     onClick={onClose}
                 >
                     <IoCloseOutline className="text-xl" />
