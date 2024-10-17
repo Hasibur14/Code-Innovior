@@ -11,36 +11,40 @@ const Success = () => {
     }, [])
 
     return (
-     <div className="container mx-auto ">
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 ">
-            {
-                successStory?.map(success => (
-                    <div key={success.id}
-                        className="max-w-2xl px-8 py-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                        <div className="flex items-center justify-between">
-                            <span className="text-sm font-light text-gray-600 dark:text-gray-400">Mar 10, 2019</span>
-                            <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-300 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500" tabIndex="0" role="button">Design</a>
-                        </div>
+        <div className="container mx-auto ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-32 ">
+                {
+                    successStory?.map(success => (
+                        <div key={success.id}
+                            className="font-mondo max-w-2xl flex gap-8 px-4 py-5 bg-gradient-to-r from-[#0e2722] to-[#00412e]  rounded-lg shadow-md hover:border border-red-500 transition-all duration-300 ">
 
-                        <div className="mt-2">
-                            <a href="#" className="text-xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 hover:underline" tabIndex="0" role="link">Accessibility tools for designers and developers</a>
-                            <p className="mt-2 text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                        </div>
-
-                        <div className="flex items-center justify-between mt-4">
-                            <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline" tabIndex="0" role="link">Read more</a>
-
-                            <div className="flex items-center">
+                            <div className="w-4/12 flex items-center">
                                 <img
-                                    className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=40&q=80" alt="avatar" />
-                                <a className="font-bold text-gray-700 cursor-pointer dark:text-gray-200" tabIndex="0" role="link">Khatab wedaa</a>
+                                    className="hidden  h-full  rounded sm:block"
+                                    src={success.image}
+                                    alt="avatar" />
+                            </div>
+                            <div className="w-8/12">
+                                <div className="flex justify-between">
+                                    <h4 className="text-lg font-bold font-mono text-white opacity-80">{success.company}</h4>
+                                    <a className="px-3 py-1 font-mono text-sm font-bold text-white transition-colors duration-300 transform bg-gradient-to-r from-[#52d1b1] to-[#005841] rounded cursor-pointer">{success.batch}</a>
+                                </div>
+                                <div className="mt-2 space-y-2">
+                                    <h2 className="text-xl font-bold text-white">{success.name}</h2>
+                                    <h4 className="text-white text-[14px]">{success.title}</h4>
+                                    <p className=" text-white dark:text-gray-300 font-mondo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. </p>
+                                </div>
+
+                                <div className="flex items-center justify-between mt-4">
+                                    <a href="#" className="text-orange-600 dark:text-blue-400 hover:underline" tabIndex="0" role="link">Read more</a>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </div>
-     </div>
     );
 };
 
