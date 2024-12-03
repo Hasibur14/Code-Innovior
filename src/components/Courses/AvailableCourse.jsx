@@ -46,7 +46,7 @@ const AvailableCourse = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                         {/* Left Text Section */}
                         <div className="md:w-1/2 text-left space-y-7">
-                            <h2 className="text-2xl md:text-5xl lg:text-7xl font-mono font-extrabold">
+                            <h2 className="text-2xl md:text-5xl lg:text-6xl font-mono font-extrabold">
                                 CodeInnovior <br /> Available Course
                             </h2>
                             <p className="text-xl font-mono font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#5ddfbd] to-[#02c393]">
@@ -99,7 +99,7 @@ const AvailableCourse = () => {
                             >
                                 <div className="flex items-center gap-4 p-6 bg-neutral-700 bg-opacity-50 rounded-full border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20">
                                     <div className="text-2xl">
-                                        <FaLocationDot className="bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-3" />
+                                        <FaLocationDot className="bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-4" />
                                     </div>
                                     <div>
                                         <p className="text-lg font-bold">Mirpur DOHS, Dhaka</p>
