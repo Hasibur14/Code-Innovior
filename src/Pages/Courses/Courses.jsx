@@ -1,4 +1,5 @@
 import AvailableCourse from "../../components/Courses/AvailableCourse";
+import MeetOurTeam from "../../components/Courses/MeetOurTeam";
 import UnlockFeature from "../../components/Courses/UnlockFeature";
 
 
@@ -7,7 +8,7 @@ const Courses = () => {
         <div>
             <AvailableCourse />
             <UnlockFeature />
-
+            <MeetOurTeam />
         </div>
     );
 };
