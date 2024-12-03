@@ -1,9 +1,10 @@
+import AvailableCourse from "../../components/Courses/AvailableCourse";
 
 
 const Courses = () => {
     return (
-        <div>
-            
+        <div className="py-20">
+            <AvailableCourse />
         </div>
     );
 };
