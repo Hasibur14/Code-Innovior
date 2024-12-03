@@ -3,7 +3,7 @@ import AvailableCourse from "../../components/Courses/AvailableCourse";
 
 const Courses = () => {
     return (
-        <div className="py-20">
+        <div>
             <AvailableCourse />
         </div>
     );

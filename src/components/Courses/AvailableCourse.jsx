@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
-import { FaPhone } from "react-icons/fa";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import { GoDownload } from "react-icons/go";
 import { FaCalendarCheck } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-
-
+import { FaLongArrowAltRight } from "react-icons/fa";
+import bgImg from "../../assets/Courses/available.png"
 
 const AvailableCourse = () => {
-
     const [callButtonExpanded, setCallButtonExpanded] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
 
     const images = [
         "https://i.postimg.cc/JtwYyJmV/257230903-2133476323485317-8240935452027283122-n.jpg",
@@ -28,7 +26,6 @@ const AvailableCourse = () => {
         return () => clearInterval(interval);
     }, [images.length]);
 
-
     useEffect(() => {
         const interval = setInterval(() => {
             setCallButtonExpanded((prev) => !prev);
@@ -37,75 +34,96 @@ const AvailableCourse = () => {
     }, []);
 
     return (
-        <div className="bg-gradient-to-b from-black to-blue-900 text-white py-10 px-4">
-            <div className="container mx-auto">
-                {/* Content Section */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                    {/* Left Text Section */}
-                    <div className="md:w-1/2 text-left">
-                        <h2 className="text-2xl md:text-5xl lg:text-7xl font-mono font-extrabold">CodeInnovior <br /> Available Course </h2>
-                        <p className="text-lg font-mono font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689]">
-                            Our goal is to offer tailored learning experiences and empower
-                            individuals to launch their careers with confidence.
-                        </p>
+        <div
+            className="bg-cover bg-center text-white  px-4 font-mondo py-10 md:py-20 "
+            style={{
+                backgroundImage: `url(${bgImg})`,
+            }}
+        >
+            <div className=" py-10 px-4 rounded-lg shadow-lg">
+                <div className="container mx-auto lg:max-w-7xl">
+                    {/* Content Section */}
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                        {/* Left Text Section */}
+                        <div className="md:w-1/2 text-left space-y-7">
+                            <h2 className="text-2xl md:text-5xl lg:text-7xl font-mono font-extrabold">
+                                CodeInnovior <br /> Available Course
+                            </h2>
+                            <p className="text-xl font-mono font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#5ddfbd] to-[#02c393]">
+                                Our goal is to offer tailored learning experiences and empower
+                                individuals to launch their careers with confidence.
+                            </p>
 
-                        <div className="md:flex gap-10">
-                            <button class="relative inline-block px-4 py-2 font-medium group">
-                                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-blue-800 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                                <span class="absolute inset-0 w-full h-full bg-blue-500 border-2 border-blue-500 group-hover:bg-blue-500"></span>
-                                <span class="relative flex gap-2 text-white py-3">
-                                    <FaCalendarCheck className="text-xl" />
-                                    Book A Free Class
-                                </span>
-                            </button>
-                            <button class="relative inline-block px-4 py-2 font-medium group">
-                                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-300 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                                <span class="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white"></span>
-                                <span class="relative text-black flex gap-2 py-3">
-                                    <GoDownload className="text-xl" />
-                                    Download Curriculum
-                                </span>
-                            </button>
+                            <div className="md:flex gap-10">
+                                <button className="relative inline-block px-4 py-2 font-medium group">
+                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-blue-800 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-blue-500 border-2 border-blue-500 group-hover:bg-blue-500"></span>
+                                    <span className="relative flex gap-2 text-white py-3">
+                                        <FaCalendarCheck className="text-xl" />
+                                        Book A Free Class
+                                    </span>
+                                </button>
+                                <button className="relative inline-block px-4 py-2 font-medium group">
+                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white"></span>
+                                    <span className="relative text-black flex gap-2 py-3">
+                                        <GoDownload className="text-xl" />
+                                        Download Curriculum
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Right Image Slider */}
+                        <div className="md:w-1/2">
+                            <div className="w-full overflow-hidden rounded-lg shadow-lg">
+                                <img
+                                    src={images[currentImageIndex]}
+                                    alt="Slider"
+                                    className="w-full h-96 object-cover bg-gray-700 bg-opacity-50 p-5 rounded-2xl "
+                                />
+                            </div>
                         </div>
                     </div>
 
-                    {/* Right Image Slider */}
-                    <div className="md:w-1/2">
-                        <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                            <img
-                                src={images[currentImageIndex]}
-                                alt="Slider"
-                                className="w-full h-80 object-cover"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                {/* Location Section */}
-                <div className="md:flex justify-between mt-10">
+                    {/* Location Section */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-4">Our Location:</h3>
-                        <div className="flex items-center gap-4 p-4 bg-gray-800 rounded-full">
-                            <div className="text-2xl">
-                                <FaLocationDot className="bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-3 " />
-                            </div>
-                            <div>
-                                <p className="text-lg">Mirpur DOHS, Dhaka</p>
-                                <p className="text-sm">House: 774, Road: 11, Avenue: 02</p>
-                            </div>
+                        <h3 className="text-2xl font-bold mb-4 mt-8 font-mono">Our Location:</h3>
+                        <div className="md:flex justify-between mt-10">
+                            <a
+                                href="https://maps.app.goo.gl/vhymLJZ8zbAjU4CC6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View Location on Google Maps"
+                                className="transition-all duration-500"
+                            >
+                                <div className="flex items-center gap-4 p-6 bg-neutral-700 bg-opacity-50 rounded-full border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20">
+                                    <div className="text-2xl">
+                                        <FaLocationDot className="bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-3" />
+                                    </div>
+                                    <div>
+                                        <p className="text-lg font-bold">Mirpur DOHS, Dhaka</p>
+                                        <p className="text-sm">House: 774, Road: 11, Avenue: 02</p>
+                                    </div>
+                                    <FaLongArrowAltRight className="text-2xl ml-5" />
+                                </div>
+                            </a>
+
+                            <button
+                                className={`flex items-center justify-center gap-2 text-white shadow-lg transition-all duration-1000 ${callButtonExpanded
+                                    ? "w-60 h-20 rounded-l-full rounded-tr-full bg-gradient-to-r from-green-400 to-green-600"
+                                    : "w-16 h-16 rounded-full bg-gradient-to-r from-green-400 to-green-600"
+                                    }`}
+                                onClick={() => alert("Call for details")}
+                            >
+                                <BiSolidPhoneCall className="text-2xl" />
+                                {callButtonExpanded && <span className="text-center text-xl font-bold font-mondo">Call for Details</span>}
+                            </button>
                         </div>
                     </div>
-                    <button
-                        className={`flex items-center gap-2  bg-green-500 text-white shadow-lg transition-all duration-1000  ${callButtonExpanded ? "w-96 rounded-l-full rounded-tr-full " : "w-16 h-16 rounded-full justify-center"
-                            }`}
-                        onClick={() => alert("Call for details")}
-                    >
-                        <FaPhone />
-                        {callButtonExpanded && <span>Call for Details</span>}
-                    </button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
