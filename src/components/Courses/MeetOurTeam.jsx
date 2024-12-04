@@ -66,7 +66,7 @@ const MeetOurTeam = () => {
             {
                 name: "Hasibur Rahman Hasib",
                 nickName: "Hasib",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/KYQkryrq/IMG-20240714-031040-049-removebg-preview-1.png",
                 designation: "Full-Stack Developer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -201,7 +201,7 @@ const MeetOurTeam = () => {
 
 
     return (
-        <div className="bg-gradient-to-t from-[#181129] to-[#0a050d] font-mondo py-5 md:py-28">
+        <div className="bg-gradient-to-t from-[#120c1f] to-[#0a050d] font-mondo py-5 md:py-28">
 
             <div className="container mx-auto mt-20">
                 <div className="w-full flex items-center justify-center my-20">
@@ -271,7 +271,7 @@ const MeetOurTeam = () => {
                                     < img
                                         src={item.img}
                                         alt={item.name}
-                                        className="w-80 h-80 mx-auto rounded  transition duration-500 transform group-hover:scale-105"
+                                        className="w-80 h-[350px] mx-auto rounded  transition duration-500 transform group-hover:scale-105"
                                     />
 
                                     <div

@@ -56,16 +56,16 @@ const AvailableCourse = () => {
 
                             <div className="md:flex gap-10">
                                 <button className="relative inline-block px-4 py-2 font-medium group">
-                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-blue-800 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                                    <span className="absolute inset-0 w-full h-full bg-blue-500 border-2 border-blue-500 group-hover:bg-blue-500"></span>
+                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-blue-800 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#2e60ac] to-[#0d72d2] border-none  group-hover:bg-blue-500 rounded"></span>
                                     <span className="relative flex gap-2 text-white py-3">
                                         <FaCalendarCheck className="text-xl" />
                                         Book A Free Class
                                     </span>
                                 </button>
                                 <button className="relative inline-block px-4 py-2 font-medium group">
-                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white"></span>
+                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0  rounded"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white  rounded"></span>
                                     <span className="relative text-black flex gap-2 py-3">
                                         <GoDownload className="text-xl" />
                                         Download Curriculum
