@@ -8,6 +8,10 @@ import 'swiper/css/pagination';
 const MeetOurTeam = () => {
     const [activeTab, setActiveTab] = useState("Web Development");
 
+    const textShadowStyle = {
+        textShadow: '-2px -2px 0 rgba(255, 255, 255, 0.3), 2px -2px 0 rgba(0, 0, 0, 0.3), -2px 2px 0 rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.3)',
+    };
+
     // Tab data
     const tabs = [
         {
@@ -27,17 +31,22 @@ const MeetOurTeam = () => {
         },
         {
             title: "Cyber Security",
-            description: "Mobile First",
-            image: "https://i.postimg.cc/wBZfMvJd/code.png"
+            description: "Best in Business",
+            image: "https://i.postimg.cc/gjGCYzpq/cyber-security.png"
         },
         {
             title: "Business Development",
-            description: "Mobile First",
+            description: "Best in Business",
             image: "https://i.postimg.cc/wBZfMvJd/code.png"
         },
         {
             title: "SQA",
-            description: "Mobile First",
+            description: "Best in Business",
+            image: "https://i.postimg.cc/TY7z6v4g/consent.png"
+        },
+        {
+            title: "HR & General",
+            description: "Best in Business",
             image: "https://i.postimg.cc/wBZfMvJd/code.png"
         },
     ];
@@ -47,7 +56,8 @@ const MeetOurTeam = () => {
         "Web Development": [
             {
                 name: "Mizanor Rahman Mizan",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                nickName: "Mizan",
+                img: "https://i.postimg.cc/XYhfkrBX/file.png",
                 designation: "Full-Stack Developer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -55,7 +65,8 @@ const MeetOurTeam = () => {
             },
             {
                 name: "Hasibur Rahman Hasib",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                nickName: "Hasib",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "Full-Stack Developer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -65,7 +76,7 @@ const MeetOurTeam = () => {
         "UI/UX Design": [
             {
                 name: "Tarif",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "UI Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -73,7 +84,7 @@ const MeetOurTeam = () => {
             },
             {
                 name: "Supto",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "UX Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -83,7 +94,7 @@ const MeetOurTeam = () => {
         "Graphics Design": [
             {
                 name: "John",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "Graphic Artist",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -91,7 +102,7 @@ const MeetOurTeam = () => {
             },
             {
                 name: "Doe",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "Graphic Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -101,7 +112,7 @@ const MeetOurTeam = () => {
         "Cyber Security": [
             {
                 name: "Tasnim Tanim",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "Cyber Security Analyst",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -109,32 +120,91 @@ const MeetOurTeam = () => {
             },
             {
                 name: "Dave",
-                img: "https://i.postimg.cc/8zJsjBjn/photo-gallery-img-02.jpg",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "Security Engineer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
             },
+
+        ],
+        "SQA": [
+            {
+                name: "Tasnim Tanim",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                designation: "Cyber Security Analyst",
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            },
+            {
+                name: "Dave",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                designation: "Security Engineer",
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            },
+
+        ],
+        "HR & General": [
+            {
+                name: "Tasnim Tanim",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                designation: "Cyber Security Analyst",
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            },
+            {
+                name: "Dave",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                designation: "Security Engineer",
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            },
+
+        ],
+        "Business Development": [
+            {
+                name: "Tasnim Tanim",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                designation: "Cyber Security Analyst",
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            },
+            {
+                name: "Dave",
+                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                designation: "Security Engineer",
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            },
+
         ],
     };
 
 
     return (
-        <div className="bg-gradient-to-t from-[#1e493e] to-[#000403] font-mondo">
+        <div className="bg-gradient-to-t from-[#160f25] to-[#060606] font-mondo">
+
             <div className="container mx-auto mt-20">
                 <div className="w-full flex items-center justify-center my-20">
                     <h2
                         className="text-white text-2xl md:text-4xl lg:text-6xl  uppercase  text-center font-mono">
                         <span className="text-rose-500">Meet Our Team: </span>
-                        The <br /> Experts Across Every Depertment_
+                        The <br /> Experts Across Every Depertment
                     </h2>
                 </div>
                 <div className="container mx-auto max-w-7xl">
                     <div className=" text-white p-6">
                         {/* Tab Buttons with Swiper Slider */}
                         <Swiper
-                            spaceBetween={50}
-                            slidesPerView={3} // Display only one slide at a time
+                            spaceBetween={30}
+                            slidesPerView={3.5}
 
                             className="mb-6"
                         >
@@ -142,9 +212,9 @@ const MeetOurTeam = () => {
                                 <SwiperSlide key={tab.title}>
                                     <button
                                         onClick={() => setActiveTab(tab.title)}
-                                        className={`flex w-full gap-3 px-4 py-2 rounded-full ${activeTab === tab.title
+                                        className={`flex w-full gap-3 px-4 py-2 rounded-full h-20 hover:border-[#5FEAC7] ${activeTab === tab.title
                                             ? "bg-opacity-50 rounded-full border-2 border-[#5FEAC7] bg-[#5FEAC7] text-[#3affa3]"
-                                            : "bg-gray-700 text-gray-300 bg-opacity-50 border-2"
+                                            : "bg-gray-700 text-gray-300 bg-opacity-30 border-2"
                                             }`}
                                     >
                                         <div className="text-2xl">
@@ -164,50 +234,86 @@ const MeetOurTeam = () => {
                         </Swiper>
 
                         {/* Tab Content */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:mx-40">
+                        <div className="relative grid grid-cols-1 lg:grid-cols-2 lg:gap-24 lg:mx-52 mt-24">
                             {content[activeTab].map((item) => (
                                 <div
                                     key={item.name}
-                                    className="bg-gradient-to-t from-[#050c0a] to-[#1e493e] p-4 rounded-lg text-center"
+                                    className="relative bg-gradient-to-t from-[#160f25] to-[#1e493e] rounded-lg overflow-hidden group"
                                 >
-                                    <img
+                                    <h1
+                                        className="font-sans text-2xl uppercase text-center opacity-30 mt-5"
+                                        style={{
+                                            fontSize: "100px",
+                                            fontWeight: 900,
+                                            color: "transparent",
+                                            WebkitTextStroke: "3px #ffffff",
+                                        }}
+                                    >
+                                        {item.nickName}
+                                    </h1>
+
+                                    {/* Image */}
+                                    < img
                                         src={item.img}
                                         alt={item.name}
-                                        className="w-72 h-72 mx-auto rounded mb-2"
+                                        className="w-80 h-80 mx-auto rounded  transition duration-500 transform group-hover:scale-105"
                                     />
-                                    <p className="text-xl font-bold">{item.name}</p>
-                                    <p className="text-sm text-gray-400 mb-3">{item.designation}</p>
-                                    <div className="flex justify-center space-x-4">
-                                        <a
-                                            href={item.fb}
-                                            target="_blank" rel="noopener noreferrer"
-                                            aria-label="Follow us on Facebook">
-                                            <FaFacebookF className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
-                                        </a>
-                                        <a
-                                            href={item.linkedin}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label="Follow us on LinkedIn">
-                                            <FaLinkedinIn className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
-                                        </a>
-                                        <a
-                                            href="https://twitter.com"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label="Follow us on Twitter">
-                                            <FaGithub className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
-                                        </a>
+
+                                    <div
+                                        className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#1e493e] opacity-0 group-hover:opacity-90 transition duration-500 bg-[length:100%_20%] bg-bottom"
+                                        style={{
+                                            background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 229, 174, 0.7) 100%)',
+                                        }}
+                                    ></div>
+
+
+
+                                    {/* Content */}
+                                    <div className="absolute inset-0 flex bottom-10 flex-col items-center justify-end opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <h4 className="text-xl font-bold transform translate-y-10 group-hover:translate-y-0 transition duration-500">
+                                            {item.name}
+                                        </h4>
+                                        <p className="text-sm text-gray-200 mb-3 transform translate-y-10 group-hover:translate-y-0 transition duration-500">
+                                            {item.designation}
+                                        </p>
+
+                                        {/* Social Media Icons */}
+                                        <div className="flex justify-center space-x-4 transform translate-y-10 group-hover:translate-y-0 transition duration-500">
+                                            <a
+                                                href={item.fb}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="Follow us on Facebook"
+                                            >
+                                                <FaFacebookF className="text-2xl p-1 rounded bg-white text-[#05B689] hover:bg-[#05B689] hover:text-white transition duration-500" />
+                                            </a>
+                                            <a
+                                                href={item.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="Follow us on LinkedIn"
+                                            >
+                                                <FaLinkedinIn className="text-2xl p-1 rounded bg-white text-[#05B689] hover:bg-[#05B689] hover:text-white transition duration-500" />
+                                            </a>
+                                            <a
+                                                href="https://twitter.com"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label="Follow us on Twitter"
+                                            >
+                                                <FaGithub className="text-2xl p-1 rounded bg-white text-[#05B689] hover:bg-[#05B689] hover:text-white transition duration-500" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+
+        </div >
     );
 };
 
