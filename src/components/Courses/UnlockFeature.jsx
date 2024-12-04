@@ -61,7 +61,7 @@ const UnlockFeature = () => {
                             <div
                                 className="text-4xl mb-4 transform transition-transform duration-300 group-hover:scale-110"
                             >
-                                <img className="w-24 mt-10 ml-2" src={feature.image} alt="feature" />
+                                <img className="w-20 mt-10 ml-2" src={feature.image} alt="feature" />
                             </div>
                             <h3
                                 className="text-xl lg:text-3xl font-semibold mb-3 translate-y-0 group-hover:translate-y-5 transition-transform duration-300"
