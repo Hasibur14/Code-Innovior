@@ -5,6 +5,17 @@ const MeetTeam = () => {
 
     const content = [
         {
+            name: "Jhamur",
+            nickName: "Jhamur",
+            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+            designation: "HR & Admin",
+            social: {
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            }
+        },
+        {
             name: "Mizanor Rahman Mizan",
             nickName: "Mizan",
             img: "https://i.postimg.cc/XYhfkrBX/file.png",
@@ -20,6 +31,17 @@ const MeetTeam = () => {
             nickName: "Hasib",
             img: "https://i.postimg.cc/KYQkryrq/IMG-20240714-031040-049-removebg-preview-1.png",
             designation: "Full-Stack Developer",
+            social: {
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            }
+        },
+        {
+            name: "Mahabub Jamil",
+            nickName: "Mahbub",
+            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+            designation: "Cyber Security Analyst",
             social: {
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -62,28 +84,6 @@ const MeetTeam = () => {
         {
             name: "Tasnim Tanim",
             nickName: "Tanim",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-            designation: "Cyber Security Analyst",
-            social: {
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            }
-        },
-        {
-            name: "Mahabub Jamil",
-            nickName: "Mahbub",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-            designation: "Cyber Security Analyst",
-            social: {
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            }
-        },
-        {
-            name: "Jhamur",
-            nickName: "Jhamur",
             img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
             designation: "Cyber Security Analyst",
             social: {
