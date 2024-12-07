@@ -65,7 +65,7 @@ const LearnUs = () => {
 
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto my-28 md:mt-60">
             {/* Section Title */}
             <div className="flex items-center justify-center my-20">
                 <h2 className="text-white text-2xl md:text-4xl lg:text-6xl uppercase text-center font-mono">
@@ -123,7 +123,7 @@ const LearnUs = () => {
             </div>
 
             {/* Video */}
-            <div className='flex justify-center w-1/2 mt-16'>
+            <div className="flex justify-center items-center">
                 <div className="bg-gradient-to-r from-[#003326] to-[#2EB391] rounded-3xl p-4 md:p-6">
                     <video className="w-full h-full rounded-lg" controls>
                         <source src={webDev} type="video/mp4" />
@@ -131,6 +131,7 @@ const LearnUs = () => {
                     </video>
                 </div>
             </div>
+
         </div>
     );
 };
