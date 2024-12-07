@@ -5,9 +5,9 @@ const MeetTeam = () => {
 
     const content = [
         {
-            name: "Jhamur",
+            name: "Jhamur ",
             nickName: "Jhamur",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+            img: "https://i.ibb.co.com/F8hLYMz/file-1.png",
             designation: "HR & Admin",
             social: {
                 fb: "https://facebook.com",
