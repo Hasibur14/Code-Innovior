@@ -1,6 +1,10 @@
-import AboutUs from "../../components/About/AboutUs/AboutUs";
-import Journey from "../../components/About/Journey/Journey";
-import OurMission from "../../components/About/OurMission/OurMission";
+
+import AboutUs from "../../components/About/AboutUs";
+import Journey from "../../components/About/Journey";
+import LearnUs from "../../components/About/LearnUs";
+import MeetTeam from "../../components/About/MeetTeam";
+import OurMission from "../../components/About/OurMission";
+import Questions from "../../components/Courses/Questions";
 import Slider from "../../components/keen-slide/Slider";
 
 
@@ -10,7 +14,10 @@ const About = () => {
             <AboutUs />
             <Journey />
             <OurMission />
+            <LearnUs />
+            <MeetTeam />
             <Slider />
+            <Questions />
         </div>
     );
 };
