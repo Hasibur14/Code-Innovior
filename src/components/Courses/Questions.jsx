@@ -7,21 +7,24 @@ const Questions = () => {
 
     // Handlers for button actions
     const handleCallClick = () => {
-        window.location.href = "tel:+8801844185480"; 
+        window.location.href = "tel:+8801844185480";
     };
 
     const handleEmailClick = () => {
-        window.location.href = "mailto:info@goinnovior.com"; 
+        window.location.href = "mailto:info@goinnovior.com";
     };
 
     return (
-        <div className='py-14 md:py-20'>
-            <div className="container mx-auto max-w-[1100px] bg-gradient-to-l from-[#15061F] to-[#681E63] rounded-xl font-mondo py-5 md:py-28 flex items-center justify-center">
+        <div className='py-14 md:py-20 mx-4 md:mx-0'>
+            <div className="container mx-auto max-w-[1100px] bg-gradient-to-l from-[#15061F] to-[#681E63] rounded-xl font-mondo py-5 md:py-28  items-center justify-center">
                 <div className="text-center space-y-4">
-                    <img src="https://i.postimg.cc/9FTBPr4L/Frame-64.png" alt="Questions" className="mx-auto" />
+                    <img
+                        src="https://i.postimg.cc/9FTBPr4L/Frame-64.png"
+                        alt="Questions"
+                        className="mx-auto" />
                     <h4 className="text-white text-2xl font-semibold">Have any questions?</h4>
                     <p className="text-white text-lg ">Talk to our Student Advisor anytime.</p>
-                    <div className="md:flex gap-10 justify-center">
+                    <div className="md:flex gap-10 justify-center space-x-4">
                         {/* Call Us Button */}
                         <button
                             onClick={handleCallClick}

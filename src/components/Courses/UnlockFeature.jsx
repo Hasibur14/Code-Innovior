@@ -56,12 +56,12 @@ const UnlockFeature = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="relative p-6 bg-gradient-to-t from-[#1e493e] to-[#01221a] rounded-2xl hover:shadow-xl transform duration-300 hover:bg-gradient-to-r hover:from-[#317b68] hover:to-[#0f4e3e] group hover:translate-y-0 group-hover:translate-y-5 transition-transform "
+                            className="relative px-6 md:px-14 py-4 md:py-6 bg-gradient-to-t from-[#1e493e] to-[#01221a] rounded-2xl hover:shadow-xl  transform duration-500 hover:bg-gradient-to-r hover:from-[#317b68] hover:to-[#0f4e3e] group hover:translate-y-0 group-hover:translate-y-5 transition-transform "
                         >
                             <div
-                                className="text-4xl mb-4 transform transition-transform duration-300 group-hover:scale-110"
+                                className="text-4xl mb-4 transform transition-transform duration-500 group-hover:scale-110"
                             >
-                                <img className="w-20 mt-10 ml-2" src={feature.image} alt="feature" />
+                                <img className="w-20 mt-5 ml-2" src={feature.image} alt="feature" />
                             </div>
                             <h3
                                 className="text-xl lg:text-3xl font-semibold mb-3 translate-y-0 group-hover:translate-y-5 transition-transform duration-300"
