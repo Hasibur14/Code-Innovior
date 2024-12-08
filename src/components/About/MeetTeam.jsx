@@ -115,7 +115,7 @@ const MeetTeam = () => {
                                 <h1
                                     className="font-sans text-2xl uppercase text-center opacity-30 mt-5"
                                     style={{
-                                        fontSize: "100px",
+                                        fontSize: "85px",
                                         fontWeight: 900,
                                         color: "transparent",
                                         WebkitTextStroke: "3px #ffffff",

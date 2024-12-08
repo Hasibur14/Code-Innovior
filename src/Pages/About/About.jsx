@@ -10,7 +10,7 @@ import Slider from "../../components/keen-slide/Slider";
 
 const About = () => {
     return (
-        <div className="mx-4 md:mx-0">
+        <div>
             <AboutUs />
             <Journey />
             <OurMission />
