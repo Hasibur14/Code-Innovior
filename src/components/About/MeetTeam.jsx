@@ -5,8 +5,8 @@ const MeetTeam = () => {
 
     const content = [
         {
-            name: "Jhamur ",
-            nickName: "Jhamur",
+            name: "Jhumur ",
+            nickName: "Jhumur",
             img: "https://i.ibb.co.com/F8hLYMz/file-1.png",
             designation: "HR & Admin",
             social: {
@@ -97,7 +97,7 @@ const MeetTeam = () => {
 
 
     return (
-        <div className="bg-gradient-to-t from-[#120c1f] to-[#0a050d] font-mondo py-5 md:py-28">
+        <div className="bg-gradient-to-t from-[#120c1f] to-[#0a050d] font-mondo py-5 md:py-20 mx-4 md:mx-0">
             <div className="container mx-auto mt-20">
                 <div className="w-full flex items-center justify-center my-20">
                     <h2 className="text-white text-2xl md:text-4xl lg:text-6xl uppercase text-center font-mono">
@@ -150,7 +150,7 @@ const MeetTeam = () => {
                                     </p>
                                     <div className="flex space-x-4 mb-4">
                                         <a
-                                            href={item.fb}
+                                            href={item.social.fb} 
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-white hover:text-blue-500"
@@ -158,7 +158,7 @@ const MeetTeam = () => {
                                             <FaFacebookF />
                                         </a>
                                         <a
-                                            href={item.linkedin}
+                                            href={item.social.linkedin} 
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-white hover:text-blue-700"
@@ -166,7 +166,7 @@ const MeetTeam = () => {
                                             <FaLinkedinIn />
                                         </a>
                                         <a
-                                            href={item.github}
+                                            href={item.social.github} 
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-white hover:text-gray-500"
@@ -174,6 +174,7 @@ const MeetTeam = () => {
                                             <FaGithub />
                                         </a>
                                     </div>
+
                                 </div>
                             </div>
                         ))}

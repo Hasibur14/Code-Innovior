@@ -26,7 +26,7 @@ const OurMission = () => {
     ];
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 py-10 md:py-16">
             <h2 className="text-3xl md:text-5xl lg:text-7xl text-center font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
                 Our Mission_
             </h2>

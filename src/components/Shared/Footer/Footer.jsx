@@ -95,7 +95,7 @@ const Footer = () => {
                 © {currentYear} Design & Developed By
                 <a
                     className='hover:text-green-500 transition-colors duration-500 font-semibold'
-                    href="https://www.goinnovior.com/"
+                    href="http://codeinnovior.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

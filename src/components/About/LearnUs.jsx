@@ -62,7 +62,7 @@ const LearnUs = () => {
     ];
 
     return (
-        <div className="container mx-auto md:max-w-7xl my-16 md:my-28 lg:my-52">
+        <div className="container mx-auto md:max-w-7xl my-16 md:my-28 ">
             {/* Section Title */}
             <div className="flex items-center justify-center mb-10 md:mb-20">
                 <h2 className="text-white text-xl md:text-3xl lg:text-5xl uppercase text-center font-mono">
