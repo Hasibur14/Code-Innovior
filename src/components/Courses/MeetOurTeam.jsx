@@ -4,12 +4,20 @@ import { FaGithub } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { TfiArrowCircleRight } from "react-icons/tfi";
+import { TfiArrowCircleLeft } from "react-icons/tfi";
 
 const MeetOurTeam = () => {
     const [activeTab, setActiveTab] = useState("Web Development");
+    const swiperRef = React.useRef(null);
 
-    const textShadowStyle = {
-        textShadow: '-2px -2px 0 rgba(255, 255, 255, 0.3), 2px -2px 0 rgba(0, 0, 0, 0.3), -2px 2px 0 rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.3)',
+
+    const handlePrevSlide = () => {
+        swiperRef.current?.slidePrev();
+    };
+
+    const handleNextSlide = () => {
+        swiperRef.current?.slideNext();
     };
 
     // Tab data
@@ -36,7 +44,7 @@ const MeetOurTeam = () => {
         },
         {
             title: "Business Development",
-            description: "Best in Business",
+            description: "",
             image: "https://i.postimg.cc/wBZfMvJd/code.png"
         },
         {
@@ -75,19 +83,19 @@ const MeetOurTeam = () => {
         ],
         "UI/UX Design": [
             {
-                name: "Tarif",
-                nickName: "Tarif",
+                name: "Supto",
+                nickName: "Supto",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "UI Designer",
+                designation: "UI/UX Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
             },
             {
-                name: "Supto",
-                nickName: "Supto",
+                name: "Tarif Khan",
+                nickName: "Tarif",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "UX Designer",
+                designation: "UX/UI Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
@@ -95,19 +103,10 @@ const MeetOurTeam = () => {
         ],
         "Graphics Design": [
             {
-                name: "Redhi",
-                nickName: "Redhi",
+                name: "Ridhi",
+                nickName: "Ridhi",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
                 designation: "Graphic Artist",
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            },
-            {
-                name: "Ashik",
-                nickName: "Ashik",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Graphic Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
@@ -123,23 +122,13 @@ const MeetOurTeam = () => {
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
             },
-            {
-                name: "Minul",
-                nickName: "Minul",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Security Engineer",
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            },
-
         ],
         "SQA": [
             {
                 name: "Mahabub Jamil",
                 nickName: "Mahbub",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Cyber Security Analyst",
+                designation: "SQA",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
@@ -148,7 +137,7 @@ const MeetOurTeam = () => {
                 name: "Supto",
                 nickName: "Supto",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Security Engineer",
+                designation: "SQA",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
@@ -157,44 +146,25 @@ const MeetOurTeam = () => {
         ],
         "HR & General": [
             {
-                name: "Jhamur",
-                nickName: "Jhamur",
+                name: "Jhumur Chakma",
+                nickName: "Jhumur",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Cyber Security Analyst",
+                designation: "HR & General",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
             },
-            {
-                name: "Dave",
-                nickName: "Dave",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Security Engineer",
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            },
-
         ],
         "Business Development": [
             {
-                name: "Mahabub",
+                name: "Mahabub Jamil",
                 nickName: "Mahbub",
                 img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Cyber Security Analyst",
+                designation: "Business Devlopment & Strategy Analyst",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
                 github: "https://github.com"
-            },
-            {
-                name: "Taj Khan",
-                nickName: "Taj",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-                designation: "Security Engineer",
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            },
+            }
 
         ],
     };
@@ -212,44 +182,65 @@ const MeetOurTeam = () => {
                     </h2>
                 </div>
                 <div className="container mx-auto max-w-7xl">
-                    <div className=" text-white p-6">
-                        {/* Tab Buttons with Swiper Slider */}
-                        <Swiper
-                            spaceBetween={30}
-                            slidesPerView={3.5}
+                    <div className="text-white p-4 md:p-6">
+                        <div className="flex gap-2 md:gap-5">
+                            {/* Tab Buttons with Swiper Slider */}
+                            <button
+                                className="group hover:scale-110 transition-all duration-300 opacity-70"
+                                onClick={handlePrevSlide}>
+                                <TfiArrowCircleLeft className="text-4xl group-hover:animate-pulse" />
+                            </button>
 
-                            className="mb-6"
-                        >
-                            {tabs.map((tab) => (
-                                <SwiperSlide key={tab.title}>
-                                    <button
-                                        onClick={() => setActiveTab(tab.title)}
-                                        className={`flex w-full gap-8 px-4 py-2 rounded-full h-20 hover:border-[#5FEAC7] transition-all duration-1000 ${activeTab === tab.title
-                                            ? "bg-opacity-50 rounded-full border-2 border-[#5FEAC7] bg-[#5FEAC7] text-[#3affa3]"
-                                            : "bg-gray-700 text-gray-300 bg-opacity-30 border-2"
-                                            }`}
-                                    >
-                                        <div className="text-2xl">
-                                            <img
-                                                className={`ml-3 ${activeTab === tab.title
-                                                    ? "bg-[#3affa3] bg-opacity-20 rounded-full w-14 h-14 p-4"
-                                                    : "bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-4"
-                                                    }`}
-                                                src={tab.image}
-                                                alt={tab.title}
-                                            />
-                                        </div>
-                                        <div>
-                                            <span className="text-xl">{tab.title}</span>
-                                            <span className="block text-sm">{tab.description}</span>
-                                        </div>
-                                    </button>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-
+                            <Swiper
+                                spaceBetween={30}
+                                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                                breakpoints={{
+                                    640: {
+                                        slidesPerView: 1,
+                                    },
+                                    768: {
+                                        slidesPerView: 2,
+                                    },
+                                    1024: {
+                                        slidesPerView: 3,
+                                    },
+                                }}
+                            >
+                                {tabs.map((tab) => (
+                                    <SwiperSlide key={tab.title}>
+                                        <button
+                                            onClick={() => setActiveTab(tab.title)}
+                                            className={`flex w-full gap-8 px-4 py-2 rounded-full lg:h-20 hover:border-[#5FEAC7] transition-all duration-1000 ${activeTab === tab.title
+                                                ? "bg-opacity-50 rounded-full border-2 border-[#5FEAC7] bg-[#5FEAC7] text-[#3affa3]"
+                                                : "bg-gray-700 text-gray-300 bg-opacity-30 border-2"
+                                                }`}
+                                        >
+                                            <div className="text-2xl">
+                                                <img
+                                                    className={`ml-3 ${activeTab === tab.title
+                                                        ? "bg-[#3affa3] bg-opacity-20 rounded-full w-14 h-14 p-4"
+                                                        : "bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-4"
+                                                        }`}
+                                                    src={tab.image}
+                                                    alt={tab.title}
+                                                />
+                                            </div>
+                                            <div>
+                                                <span className="text-xl font-semibold">{tab.title}</span>
+                                                <span className="block text-sm">{tab.description}</span>
+                                            </div>
+                                        </button>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                            <button
+                                className="group hover:scale-110 transition-all duration-300 opacity-70"
+                                onClick={handleNextSlide}>
+                                <TfiArrowCircleRight className="text-4xl group-hover:animate-pulse" />
+                            </button>
+                        </div>
                         {/* Tab Content */}
-                        <div className="relative grid grid-cols-1 lg:grid-cols-2 lg:gap-24 lg:mx-52 mt-24">
+                        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-24 lg:mx-48 mt-24">
                             {content[activeTab].map((item) => (
                                 <div
                                     key={item.name}
@@ -258,7 +249,7 @@ const MeetOurTeam = () => {
                                     <h1
                                         className="font-sans text-2xl uppercase text-center opacity-30 mt-5"
                                         style={{
-                                            fontSize: "100px",
+                                            fontSize: "85px",
                                             fontWeight: 900,
                                             color: "transparent",
                                             WebkitTextStroke: "3px #ffffff",
@@ -266,25 +257,18 @@ const MeetOurTeam = () => {
                                     >
                                         {item.nickName}
                                     </h1>
-
                                     {/* Image */}
-                                    < img
+                                    <img
                                         src={item.img}
                                         alt={item.name}
-                                        className="w-80 h-[350px] mx-auto rounded  transition duration-500 transform group-hover:scale-105"
+                                        className="w-80 h-[350px] mx-auto rounded transition duration-500 transform group-hover:scale-105"
                                     />
-
                                     <div
                                         className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#1e493e] opacity-0 group-hover:opacity-90 transition duration-500"
                                         style={{
-                                            background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 229, 174, 0.63) 100%)',
-
+                                            background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 229, 174, 0.63) 100%)",
                                         }}
                                     ></div>
-
-
-
-
                                     {/* Content */}
                                     <div className="absolute inset-0 flex bottom-10 flex-col items-center justify-end opacity-0 group-hover:opacity-100 transition duration-500">
                                         <h4 className="text-2xl font-bold transform translate-y-10 group-hover:translate-y-0 transition duration-500">
@@ -293,7 +277,6 @@ const MeetOurTeam = () => {
                                         <p className="text-lg text-gray-200 mb-3 transform translate-y-10 group-hover:translate-y-0 transition duration-500">
                                             {item.designation}
                                         </p>
-
                                         {/* Social Media Icons */}
                                         <div className="flex justify-center space-x-4 transform translate-y-10 group-hover:translate-y-0 transition duration-500">
                                             <a
@@ -325,7 +308,6 @@ const MeetOurTeam = () => {
                                 </div>
                             ))}
                         </div>
-
                     </div>
                 </div>
             </div >

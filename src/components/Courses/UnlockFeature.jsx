@@ -6,7 +6,7 @@ const UnlockFeature = () => {
     const features = [
         {
             image: "https://i.postimg.cc/4NPWtwtP/factory.png",
-            title: "Campus To Corporate: Your Launchpad To Success!",
+            title: "Campus To Corporate Launchpad To Success!",
             description:
                 "Our program bridges the gap between academic learning and professional demands, giving you the skills and confidence to excel in the corporate world.",
         },
@@ -43,7 +43,7 @@ const UnlockFeature = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-t from-[#1e493e] to-[#000403] font-mondo">
+        <div className="bg-gradient-to-t from-[#1e493e] to-[#01110d] font-mondo py-10">
             <div className="container mx-auto  mt-20">
                 <div className="w-full flex items-center justify-center my-20">
                     <h2

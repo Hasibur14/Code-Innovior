@@ -5,10 +5,10 @@ const MeetTeam = () => {
 
     const content = [
         {
-            name: "Jhumur ",
+            name: "Jhumur Chakma",
             nickName: "Jhumur",
             img: "https://i.ibb.co.com/F8hLYMz/file-1.png",
-            designation: "HR & Admin",
+            designation: "Team Leader",
             social: {
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -27,6 +27,17 @@ const MeetTeam = () => {
             }
         },
         {
+            name: "Mahabub Jamil",
+            nickName: "Mahbub",
+            img: "https://i.postimg.cc/tg062NVw/IMG-20240714-031040-049-removebg-preview-1-1.png",
+            designation: "Business Development & Strategy Analyst",
+            social: {
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            }
+        },
+        {
             name: "Hasibur Rahman Hasib",
             nickName: "Hasib",
             img: "https://i.postimg.cc/KYQkryrq/IMG-20240714-031040-049-removebg-preview-1.png",
@@ -38,9 +49,20 @@ const MeetTeam = () => {
             }
         },
         {
-            name: "Mahabub Jamil",
-            nickName: "Mahbub",
+            name: "Supto",
+            nickName: "Supto",
             img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+            designation: "UI/UX Designer",
+            social: {
+                fb: "https://facebook.com",
+                linkedin: "https://linkedin.com",
+                github: "https://github.com"
+            }
+        },
+        {
+            name: "Tannim Tanim",
+            nickName: "Tanim",
+            img: "https://i.postimg.cc/L8gftbhj/IMG-20240714-031040-049-removebg-preview-1-2.png",
             designation: "Cyber Security Analyst",
             social: {
                 fb: "https://facebook.com",
@@ -49,10 +71,10 @@ const MeetTeam = () => {
             }
         },
         {
-            name: "Tarif",
+            name: "Tarif Khan",
             nickName: "Tarif",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-            designation: "UI Designer",
+            img: "https://i.postimg.cc/FsB3J4F9/IMG-20240714-031040-049-removebg-preview-1-3.png",
+            designation:"UI/UX Designer",
             social: {
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -60,19 +82,8 @@ const MeetTeam = () => {
             }
         },
         {
-            name: "Supto",
-            nickName: "Supto",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-            designation: "UX Designer",
-            social: {
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            }
-        },
-        {
-            name: "Redhi",
-            nickName: "Redhi",
+            name: "Ridhi",
+            nickName: "Ridhi",
             img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
             designation: "Graphic Artist",
             social: {
@@ -81,20 +92,7 @@ const MeetTeam = () => {
                 github: "https://github.com"
             }
         },
-        {
-            name: "Tasnim Tanim",
-            nickName: "Tanim",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
-            designation: "Cyber Security Analyst",
-            social: {
-                fb: "https://facebook.com",
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
-            }
-        },
     ];
-
-
 
     return (
         <div className="bg-gradient-to-t from-[#120c1f] to-[#0a050d] font-mondo py-5 md:py-20 mx-4 md:mx-0">
@@ -110,8 +108,7 @@ const MeetTeam = () => {
                         {content.map((item) => (
                             <div
                                 key={item.name}
-                                className="relative bg-gradient-to-t from-[#160f25] to-[#1e493e] rounded-lg overflow-hidden group"
-                            >
+                                className="relative bg-gradient-to-t from-[#160f25] to-[#1e493e] rounded-lg overflow-hidden group">
                                 <h1
                                     className="font-sans text-2xl uppercase text-center opacity-30 mt-5"
                                     style={{
@@ -128,7 +125,7 @@ const MeetTeam = () => {
                                 <img
                                     src={item.img}
                                     alt={item.name}
-                                    className="w-80 h-[350px] mx-auto rounded transition duration-500 transform group-hover:scale-105"
+                                    className="w-80 h-[380px] mx-auto rounded transition duration-500 transform group-hover:scale-105"
                                 />
 
                                 {/* Hover Overlay */}
@@ -142,7 +139,7 @@ const MeetTeam = () => {
 
                                 {/* Content */}
                                 <div className="absolute inset-0 flex flex-col items-center justify-end opacity-0 group-hover:opacity-100 transition duration-500">
-                                    <h4 className="text-2xl font-bold transform translate-y-10 group-hover:translate-y-0 transition duration-500">
+                                    <h4 className="text-2xl text-[#eaaa3a] font-bold transform translate-y-10 group-hover:translate-y-0 transition duration-500">
                                         {item.name}
                                     </h4>
                                     <p className="text-lg text-gray-200 mb-3 transform translate-y-10 group-hover:translate-y-0 transition duration-500">
@@ -150,26 +147,26 @@ const MeetTeam = () => {
                                     </p>
                                     <div className="flex space-x-4 mb-4">
                                         <a
-                                            href={item.social.fb} 
+                                            href={item.social.fb}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-blue-500"
+                                            className="text-white hover:text-rose-600"
                                         >
                                             <FaFacebookF />
                                         </a>
                                         <a
-                                            href={item.social.linkedin} 
+                                            href={item.social.linkedin}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-blue-700"
+                                            className="text-white hover:text-rose-600"
                                         >
                                             <FaLinkedinIn />
                                         </a>
                                         <a
-                                            href={item.social.github} 
+                                            href={item.social.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-gray-500"
+                                            className="text-white hover:text-rose-600"
                                         >
                                             <FaGithub />
                                         </a>

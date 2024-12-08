@@ -38,22 +38,22 @@ const faqData = [
 const Faq = () => {
     return (
         <div className="container mx-auto font-mondo text-white py-14 md:py-28">
-            <h2 className="my-16 text-3xl md:text-5xl lg:text-7xl text-center font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
+            <h2 className="my-16 text-3xl md:text-5xl lg:text-7xl text-center font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#78e7ca] to-[#05B689] z-20">
                 Frequently Asked Questions (FAQ)_
             </h2>
-            <div className="lg:flex gap-20">
+            <div className="lg:flex gap-20 mx-4 md:mx-0">
                 <div className="lg:w-1/2">
                     {faqData.map((item, index) => (
                         <div
                             key={index}
-                            className="collapse collapse-plus border-b border-[#05B689]"
+                            className="collapse collapse-plus  transition-all duration-1000 border-b border-gray-500"
                         >
                             <input
                                 type="radio"
                                 name="faq-accordion"
                                 defaultChecked={index === 0}
                             />
-                            <div className="collapse-title text-xl font-medium">
+                            <div className="collapse-title text-xl font-medium text-[#05B689]">
                                 {item.question}
                             </div>
                             <div className="collapse-content text-gray-300">
@@ -65,9 +65,9 @@ const Faq = () => {
 
                 <div className="lg:w-1/2">
                     <img
-                        src="https://i.postimg.cc/zfHSxvvt/corporate-environment-1.webp"
-                        alt="Team"
-                        className=" shadow-md p-5 bg-gray-500 bg-opacity-50 rounded-xl mt-14"
+                        src="https://i.postimg.cc/nL74JPJn/Rectangle-39.png"
+                        alt="Team photo"
+                        className=" shadow-md p-5 bg-gray-500 bg-opacity-50 rounded-xl hover:scale-105 transition-all duration-1000 "
                     />
                 </div>
             </div>

@@ -98,7 +98,7 @@ const AvailableCourse = () => {
                                 title="View Location on Google Maps"
                                 className="transition-all duration-500"
                             >
-                                <div className="flex items-center gap-4 p-3 md:p-6 bg-neutral-700 bg-opacity-50 rounded-full border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20">
+                                <div className="flex items-center gap-4 p-3 md:p-5 bg-neutral-700 bg-opacity-50 rounded-full border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20 transition-colors duration-500">
                                     <div className="text-2xl">
                                         <FaLocationDot className="bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-4" />
                                     </div>
