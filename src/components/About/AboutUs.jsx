@@ -13,7 +13,7 @@ const AboutUs = () => {
                 <div className="container mx-auto lg:max-w-7xl">
                     {/* Content Section */}
                     <div className="flex flex-col items-center text-center space-y-7">
-                        <h2 className="text-2xl md:text-5xl lg:text-6xl font-mono font-extrabold">
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-mono font-extrabold">
                             About Us !
                         </h2>
                         <p className="text-xl font-mono  mb-6 text-white hidden lg:block">
@@ -25,7 +25,7 @@ const AboutUs = () => {
                     </div>
 
                     {/* Location Section */}
-                    <div className="mt-10 flex justify-center">
+                    <div className="mt-20 flex justify-center">
                         <a
                             href="https://maps.app.goo.gl/vhymLJZ8zbAjU4CC6"
                             target="_blank"
