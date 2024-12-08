@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
-import { LiaTelegramPlane } from "react-icons/lia";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa";
 import { PiDotOutlineThin } from "react-icons/pi";
 import footerBg from "../../../assets/footer.png";
 import logo1 from "../../../assets/logo.png";
@@ -44,17 +45,20 @@ const CourseList = ({ courses }) => {
 
 const SocialLinks = () => (
     <div className="flex space-x-4">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+        <a href="https://www.facebook.com/codeinnovior2020" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
             <FaFacebookF className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
+        <a href="https://www.linkedin.com/in/codeinnovior/?fbclid=IwY2xjawHCNntleHRuA2FlbQIxMAABHZkfAI7K79tdnLUP4cy201g7l4eYcbIdJov-ASrUUTKFX1qGD8tdjB06aw_aem_HNEXYOr0ewlHQdYpmZKbOQ" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
             <FaLinkedinIn className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcodeinnovior" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
             <FaXTwitter className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
         </a>
-        <a href="mailto:info@example.com" target="_blank" rel="noopener noreferrer" aria-label="Email us">
-            <LiaTelegramPlane className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
+        <a href="https://www.instagram.com/codeinnovior/?fbclid=IwY2xjawHCNq9leHRuA2FlbQIxMAABHW3p_vv3zmS5Ib0U8tqMCPaUI8mimZsh3UcpGlVi_4WYOvETzYsGbMGQVg_aem_XF4wTR3TmA5aSAexRgh-kQ" target="_blank" rel="noopener noreferrer" aria-label="Email us">
+            <FaInstagram className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
+        </a>
+        <a href="https://www.youtube.com/@codeinnovior" target="_blank" rel="noopener noreferrer" aria-label="Email us">
+            <IoLogoYoutube className="text-2xl p-1 rounded bg-[#05B689] text-white hover:bg-white hover:text-[#05B689] transition duration-500" />
         </a>
     </div>
 );

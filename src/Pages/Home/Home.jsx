@@ -5,12 +5,14 @@ import OurMission from "../../components/Home/OurMission/OurMission";
 import SuccessStory from "../../components/Home/SuccessStory/SuccessStory";
 
 
+
+
 const Home = () => {
     return (
         <div className="bg-black">
             <div className="">
                 <Banner />
-                <OurCourse/>
+                <OurCourse />
                 <About />
                 <SuccessStory />
                 <OurMission />

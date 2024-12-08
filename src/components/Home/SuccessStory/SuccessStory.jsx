@@ -1,23 +1,15 @@
-import { useEffect, useState } from "react";
-import { FaQuoteLeft } from "react-icons/fa6";
+import { useState } from 'react';
+import { FaQuoteLeft } from 'react-icons/fa';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Modal from '../../Modal/SuccessModal';
 import successBg from "../../../assets/success.png";
-import Modal from "../../Modal/SuccessModal.jsx";
 
 const SuccessStory = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedTestimonial, setSelectedTestimonial] = useState(null);
-
-    // Auto slide functionality
-    useEffect(() => {
-        const slideInterval = setInterval(() => {
-            setCurrentSlide((prev) => (prev === dataInfo.length - 1 ? 0 : prev + 1));
-        }, 3000);
-
-        return () => clearInterval(slideInterval);
-    }, []);
-
-    
 
     const bgColors = [
         "from-[#5D3619] to-[#120818]",
@@ -26,14 +18,9 @@ const SuccessStory = () => {
         "from-[#5F0D67] to-[#15061F]",
     ];
 
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setSelectedTestimonial(null);
-    };
-
     const truncateMessage = (message) => {
         const words = message.split(" ");
-        return words.length > 25 ? words.slice(0, 25).join(" ") + "" : message;
+        return words.length > 30 ? `${words.slice(0, 30).join(" ")}...` : message;
     };
 
     const handleOpenModal = (testimonial) => {
@@ -41,9 +28,14 @@ const SuccessStory = () => {
         setIsModalOpen(true);
     };
 
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedTestimonial(null);
+    };
+
     return (
         <div
-            className="relative flex flex-col justify-center md:h-[1064px] items-center overflow-hidden  font-mondo"
+            className="md:h-[1064px] items-center overflow-hidden font-mondo py-20 lg:py-40"
             style={{
                 backgroundImage: `url(${successBg})`,
                 backgroundPosition: 'center',
@@ -51,68 +43,85 @@ const SuccessStory = () => {
                 backgroundRepeat: 'no-repeat',
                 width: '100%',
                 height: '1064px',
-            }} >
-            <div className="flex  font-mono justify-center items-center  space-y-4">
+            }}
+        >
+            <div className="flex justify-center items-center space-y-4">
                 <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#CAFFF1] to-[#05B689] relative md:mb-5">
                     Success Story_
-                    <span className="block absolute left-0 w-3/12 h-3  bg-gradient-to-r from-[#5DEDC8] to-[#005841]
-                    bottom-[-24px] md:ml-44"></span>
+                    <span className="block absolute left-0 w-3/12 h-3 bg-gradient-to-r from-[#5DEDC8] to-[#005841] bottom-[-24px] md:ml-44"></span>
                 </h1>
             </div>
-            {/* Testimonial cards */}
-            <div className="flex gap-10 overflow-hidden w-full mt-36 px-5 justify-center">
-                {dataInfo?.map((testimonial, index) => (
-                    <div
-                        key={testimonial.id}
-                        className={`w-[310px] md:w-[440px] md:h-[300px] transition-transform duration-700 ease-in-out flex-shrink-0 p-6 bg-gradient-to-r ${bgColors[index % 4]} text-white rounded-lg`}
-                        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                    >
-                        <div className="flex justify-between mb-5">
-                            <FaQuoteLeft className="text-3xl" />
-                            <span className="px-3 py-1 bg-gradient-to-r flex text-center justify-center from-[#E95A5D] to-[#ED1377] rounded text-[15px]">{testimonial.batch}</span>
-                        </div>
-                        <div className="flex flex-col justify-between">
-                            <div className="flex items-start mb-4 text-justify">
-                                <p>
-                                    {truncateMessage(testimonial.message)}
-                                    <a
-                                        className="text-orange-600 cursor-pointer"
-                                        onClick={() => handleOpenModal(testimonial)}> ...More</a>
-                                </p>
-                            </div>
-                            <div className="flex space-x-4 mt-5">
-                                <img
-                                    alt="person"
-                                    src={testimonial.image}
-                                    className="object-cover w-16 h-16 rounded-full shadow text-white"
-                                />
-                                <div className="flex flex-col space-y-1">
-                                    <h2 className="text-[17px] font-semibold">{testimonial.name}</h2>
-                                    <h2 className="text-sm opacity-70 font-semibold ">{testimonial.title}</h2>
-                                    <span className="text-[15px]">{testimonial.company}</span>
+            <div>
+                <div className="font-mondo mt-44">
+                    <Swiper
+                        slidesPerView={1}
+                        loop
+                        autoplay={{
+                            delay: 0,
+                            disableOnInteraction: false,
+                        }}
+                        speed={8000}
+                        modules={[Autoplay]}
+                        breakpoints={{
+                            480: { slidesPerView: 1, spaceBetween: 10 },
+                            768: { slidesPerView: 3, spaceBetween: 15 },
+                            1024: { slidesPerView: 4, spaceBetween: 20 },
+                            1500: { slidesPerView: 5, spaceBetween: 20 },
+                        }} >
+                        {dataInfo?.map((testimonial, index) => (
+                            <SwiperSlide
+                                key={testimonial.id}
+                                className={`w-[350px] h-[600px] bg-gradient-to-r ${bgColors[index % 4]} text-white rounded-lg p-8 flex flex-col justify-between`}
+                            >
+                                {/* Top Section */}
+                                <div>
+                                    <div className="flex justify-between items-center">
+                                        <FaQuoteLeft className="text-3xl opacity-50" />
+                                        <span className="font-mono px-3 py-1 bg-gradient-to-r from-[#c145a8] to-[#d7065a] rounded text-[15px]">
+                                            {testimonial.batch}
+                                        </span>
+                                    </div>
+                                    <p className="text-justify mt-10 opacity-85">
+                                        {truncateMessage(testimonial.message)}
+                                        <span
+                                            className="text-orange-600 cursor-pointer"
+                                            onClick={() => handleOpenModal(testimonial)}
+                                        >
+                                            More
+                                        </span>
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
 
-            {/* Modal to display selected testimonial */}
-            <Modal
-                isOpen={isModalOpen}
-                onClose={closeModal}
-                testimonial={selectedTestimonial}
-            />
+                                {/* Bottom Section */}
+                                <div className="flex items-center mt-10">
+                                    <img
+                                        alt="person"
+                                        src={testimonial.image}
+                                        className="w-14 h-14 rounded-full shadow-lg"
+                                    />
+                                    <div className="ml-4">
+                                        <h2 className="text-[17px] font-semibold">{testimonial.name}</h2>
+                                        <h3 className="text-sm opacity-70">{testimonial.title}</h3>
+                                        <span className="text-[15px] opacity-90 font-mono">{testimonial.company}</span>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+            {isModalOpen && (
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={closeModal}
+                    testimonial={selectedTestimonial}
+                />
+            )}
         </div>
     );
 };
 
 export default SuccessStory;
-
-
-
-
-
 
 
 const dataInfo = [
@@ -206,114 +215,5 @@ const dataInfo = [
         "message": "With their help, I was able to land my dream job as a frontend developer at PixelPerfection. The skills I acquired during the course were directly applicable in my interviews. I am grateful for this opportunity.",
         "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
     },
-    {
-        "id": 11,
-        "name": "Lucas Martins",
-        "title": "Mobile App Developer",
-        "company": "AppHub",
-        "batch": "Batch 7",
-        "message": "The mobile app development course was comprehensive and very practical. It helped me build apps from scratch, covering everything from design to deployment. I now feel confident in my app development skills.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 12,
-        "name": "Hiba Noor",
-        "title": "Machine Learning Engineer",
-        "company": "ML Solutions",
-        "batch": "Batch 10",
-        "message": "I was able to understand complex ML algorithms and apply them in real-world projects thanks to the course. The supportive environment encouraged my growth. I now work confidently in machine learning.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 13,
-        "name": "David Kim",
-        "title": "Cybersecurity Analyst",
-        "company": "SecureTech",
-        "batch": "Batch 9",
-        "message": "The cybersecurity training was in-depth and very current. I now work confidently in my role as a security analyst, knowing I have the skills to protect systems. The course was a game-changer for me.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 14,
-        "name": "Anika Singh",
-        "title": "Software Engineer",
-        "company": "BrightTech",
-        "batch": "Batch 11",
-        "message": "Their structured learning path and constant support made me the software engineer I am today. I appreciate the real-world applications we worked on, which helped bridge the gap between theory and practice.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 15,
-        "name": "Mohammed Ali",
-        "title": "DevOps Engineer",
-        "company": "Buildify",
-        "batch": "Batch 8",
-        "message": "I highly recommend this program for anyone interested in DevOps. The practical labs were really helpful and provided hands-on experience. I feel ready to tackle any challenges in my new role.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 16,
-        "name": "Sophia Brown",
-        "title": "Digital Marketing Specialist",
-        "company": "AdOptimize",
-        "batch": "Batch 7",
-        "message": "The digital marketing course is the best I've taken. It covers everything from SEO to social media marketing. The knowledge gained has significantly improved my campaigns and results.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 17,
-        "name": "Leonardo Rossi",
-        "title": "Data Analyst",
-        "company": "DataSync",
-        "batch": "Batch 6",
-        "message": "I was able to transition to a data analyst role seamlessly thanks to the course's project-based approach. The practical skills I learned are now invaluable in my daily work. I truly recommend this course to others.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 18,
-        "name": "Emily Green",
-        "title": "Content Writer",
-        "company": "CopyPro",
-        "batch": "Batch 9",
-        "message": "This program honed my writing skills and taught me the best practices in the content industry. I now feel more confident in my ability to produce engaging content. It has opened many doors for my career.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 19,
-        "name": "Liam O'Connor",
-        "title": "Web Developer",
-        "company": "SiteMasters",
-        "batch": "Batch 10",
-        "message": "My experience was transformative! The web development course provided hands-on experience that was crucial for my learning. I now confidently build responsive websites that meet client needs.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 20,
-        "name": "Isabella Carter",
-        "title": "Graphic Designer",
-        "company": "DesignLab",
-        "batch": "Batch 12",
-        "message": "This course gave me a solid foundation in graphic design. The feedback from instructors was invaluable, and I learned to use industry-standard tools effectively. I’m now creating designs that impress clients.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 21,
-        "name": "Nina Patel",
-        "title": "SEO Specialist",
-        "company": "RankRise",
-        "batch": "Batch 8",
-        "message": "The SEO training was thorough and up-to-date. I learned techniques that significantly boosted my website rankings. I am now a confident SEO specialist, equipped to handle various challenges.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 22,
-        "name": "Oliver Taylor",
-        "title": "Blockchain Developer",
-        "company": "BlockTech",
-        "batch": "Batch 9",
-        "message": "The blockchain development course was engaging and informative. I gained hands-on experience with real projects, which helped solidify my understanding of blockchain technology. I’m excited to work in this innovative field.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    }
+
 ];
-
-
