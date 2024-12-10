@@ -1,11 +1,14 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { PiDotOutlineThin } from "react-icons/pi";
 import footerBg from "../../../assets/footer.png";
-import logo1 from "../../../assets/logo.png";
+import logo1 from "../../../assets/home/logoColor.png";
+import { BiSolidPhoneCall } from "react-icons/bi";
+
+
 
 // Data for courses
 const coursesGroup1 = [
@@ -64,18 +67,33 @@ const SocialLinks = () => (
 );
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear(); // Get the current year dynamically
+    const currentYear = new Date().getFullYear();
+    const [callButtonExpanded, setCallButtonExpanded] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCallButtonExpanded((prev) => !prev);
+        }, 2000); // Toggle every 2 seconds
+        return () => clearInterval(interval);
+    }, []);
+
+
+    // Handlers for button actions
+    const handleCallClick = () => {
+        window.location.href = "tel:+8801844185480";
+    };
 
     return (
         <footer
             className="text-white py-6 font-mondo"
             style={{
-                background: `url(${footerBg}) lightgray 50% / cover no-repeat`
+                background: `url(${footerBg}) lightgray 50% / cover no-repeat`,
             }}
         >
             <div className="container mx-auto md:flex px-4 justify-between">
                 <div className="mb-4 md:mb-0 lg:w-1/3 space-y-6">
                     <img
+                        className='w-80'
                         src={logo1}
                         alt="code innovior"
                     />
@@ -98,13 +116,25 @@ const Footer = () => {
             <div className="text-center text-sm mt-4">
                 © {currentYear} Design & Developed By
                 <a
-                    className='hover:text-green-500 transition-colors duration-500 font-semibold'
+                    className='hover:text-[#00D8A1] transition-colors duration-500 font-semibold'
                     href="http://codeinnovior.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     {" "}CodeInnovior
                 </a>.
+            </div>
+            {/* Call Button */}
+            <div className="fixed bottom-4 right-4">
+                <button
+                    onClick={handleCallClick}
+                    className={`flex items-center justify-center gap-2 text-white shadow-lg transition-all duration-1000 ${callButtonExpanded
+                        ? "w-44 h-16 rounded-l-full rounded-tr-full bg-gradient-to-r from-[#237c66] to-[#00D8A1]"
+                        : "w-16 h-16 rounded-full bg-gradient-to-r from-[#00D8A1] to-[#064837]"
+                        }`}>
+                    <BiSolidPhoneCall className="text-xl" />
+                    {callButtonExpanded && <span className="text-center text-md  font-mondo">Call for Details</span>}
+                </button>
             </div>
         </footer>
     );

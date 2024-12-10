@@ -1,16 +1,24 @@
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CgMenuRightAlt } from "react-icons/cg";
 import { FiMenu, FiX } from 'react-icons/fi';
 import { Link, NavLink } from 'react-router-dom';
-import logo1 from "../../../assets/logo.png";
+import logo1 from "../../../assets/home/logoColor.png";
+import logo2 from "../../../assets/home/logowhite.png";
 import "./navbar.css";
-
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [servicesOpen, setServicesOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
+    const [logo, setLogo] = useState(logo1);
+
+    useEffect(() => {
+        const logoInterval = setInterval(() => {
+            setLogo(prevLogo => prevLogo === logo1 ? logo2 : logo1);
+        }, 2000);
+
+        return () => clearInterval(logoInterval);
+    }, []);
 
     const toggleMenu = () => {
         if (menuOpen) {
@@ -38,7 +46,10 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
                         <Link to="/">
-                            <img className='w-60 md:w-full' src={logo1} alt="code innovior" />
+                            <img
+                                className='w-72 transition-opacity duration-3000'
+                                src={logo}
+                                alt="logo" />
                         </Link>
                     </div>
 
@@ -47,54 +58,20 @@ const Navbar = () => {
                         <div className="nav-item">
                             <NavLink
                                 to="/"
-                                className={({ isActive }) => isActive ? "block  text-[#00D8A1] font-bold  active" :
+                                className={({ isActive }) => isActive ? "block text-[#00D8A1] font-bold active" :
                                     "block px-4 py-2 text-white hover:bg-[#00D8A1]"}
                                 onClick={handleLinkClick}
                             >
                                 Home
                             </NavLink>
                         </div>
-                        {/* 
-                        <div
-                            className="relative group "
-                            onMouseEnter={toggleServices}
-                            onMouseLeave={() => setTimeout(() => setServicesOpen(false), 200)} >
-                            <button className=" py-2 px-3 rounded hover:bg-[#00D8A1] text-white flex items-center">
-                                Services {servicesOpen ? <FiChevronUp className='ml-1 text-xl' /> : <FiChevronDown className='ml-1 text-xl' />}
-                            </button>
-
-                            <div className={`mega-menu mt-3 ${servicesOpen ? 'show' : ''}`}>
-                                <NavLink to="/a" onClick={handleLinkClick} className={({ isActive }) =>
-                                    isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                        "block px-4 py-2 text-gray-800 hover:bg-[#00D8A1] hover:text-white"}>
-                                    IT Consultancy
-                                </NavLink>
-                                <NavLink to="/b" onClick={handleLinkClick} className={({ isActive }) =>
-                                    isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                        "block px-4 py-2 text-gray-800 hover:bg-[#00D8A1] hover:text-white"}>
-                                    Managed IT
-                                </NavLink>
-                                <NavLink to="/c" onClick={handleLinkClick} className={({ isActive }) =>
-                                    isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                        "block px-4 py-2 text-gray-800 hover:bg-[#00D8A1] hover:text-white"}>
-                                    Digital Marketing
-                                </NavLink>
-                                <NavLink to="/d" onClick={handleLinkClick} className={({ isActive }) =>
-                                    isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                        "block px-4 py-2 text-gray-800 hover:bg-[#00D8A1] hover:text-white"}>
-                                    Technology Training
-                                </NavLink>
-                            </div>
-
-                        </div> */}
-
 
                         <div className="nav-item">
                             <NavLink
                                 to="/about"
-                                className={({ isActive }) => isActive ? "block  text-[#00D8A1] font-bold  active" :
-                                    "block px-4 py-2  hover:bg-[#00D8A1] text-white"}
-                                onClick={handleLinkClick} >
+                                className={({ isActive }) => isActive ? "block text-[#00D8A1] font-bold active" :
+                                    "block px-4 py-2 hover:bg-[#00D8A1] text-white"}
+                                onClick={handleLinkClick}>
                                 About
                             </NavLink>
                         </div>
@@ -102,8 +79,8 @@ const Navbar = () => {
                         <div className="nav-item">
                             <NavLink
                                 to="/courses"
-                                className={({ isActive }) => isActive ? "block  text-[#00D8A1] font-bold  active" :
-                                    "block px-4 py-2  hover:bg-[#00D8A1] text-white"}
+                                className={({ isActive }) => isActive ? "block text-[#00D8A1] font-bold active" :
+                                    "block px-4 py-2 hover:bg-[#00D8A1] text-white"}
                                 onClick={handleLinkClick}>
                                 Courses
                             </NavLink>
@@ -112,20 +89,17 @@ const Navbar = () => {
                         <div className="nav-item">
                             <NavLink
                                 to="/success"
-                                className={({ isActive }) => isActive ? "block  text-[#00D8A1] font-bold  active" :
-                                    "block px-4 py-2  hover:bg-[#00D8A1] text-white"}
-                                onClick={handleLinkClick} >
+                                className={({ isActive }) => isActive ? "block text-[#00D8A1] font-bold active" :
+                                    "block px-4 py-2 hover:bg-[#00D8A1] text-white"}
+                                onClick={handleLinkClick}>
                                 Success
                             </NavLink>
                         </div>
-                        <Link to="/" className="kisBtn px-5 py-3 text-lg  ml-4 font-semibold text-white hover:scale-105 transition duration-300 ">
+
+                        <Link to="/" className="kisBtn px-5 py-3 text-lg ml-4 font-semibold text-white hover:scale-105 transition duration-300">
                             Kids Program
-                        </Link >
-
+                        </Link>
                     </div>
-
-
-
 
                     {/* Mobile Menu Icon */}
                     <div className="md:hidden flex items-center border-1 p-1 rounded bg-[#00D8A1] hover:bg-green-400">
@@ -140,18 +114,14 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* 
-            ------------------------------------------------------------
-                                     MOBILE DEVICE NAVBAR
-            ------------------------------------------------------------ */}
-
+            {/* Mobile Menu */}
             {(menuOpen && !isClosing) && (
                 <div className="side-menu">
                     <div className="side-menu-2">
                         <div className="flex justify-between items-center p-4">
-                            <img className='w-9/12' src={logo1} alt="code innovior" />
+                            <img className='w-9/12' src={logo} alt="logo" />
                             <button onClick={toggleMenu}>
-                                <FiX className="text-2xl text-red-500 border-2 border-red-500  hover:bg-red-500 hover:text-white rounded" />
+                                <FiX className="text-2xl text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white rounded" />
                             </button>
                         </div>
                         <div className="mt-4">
@@ -160,58 +130,9 @@ const Navbar = () => {
                                 onClick={handleLinkClick}
                                 className={({ isActive }) =>
                                     isActive ? "block px-4 py-2 text-[#00D8A1] font-bold hover:bg-[#00D8A1] hover:text-white " :
-                                        "block px-4 py-2 text-gray-900 "} >
+                                        "block px-4 py-2 text-gray-900 "}>
                                 Home
                             </NavLink>
-
-                            {/* <div
-                                className={({ isActive }) =>
-                                    isActive ? "block px-4 py-2 text-green-600 font-bold hover:bg-green-600 hover:text-white " :
-                                        "block px-4 py-2 text-gray-900 "}>
-                                <button
-                                    onClick={toggleServices}
-                                    className="w-full text-left px-4 py-2 flex justify-between text-gray-800">
-                                    Services
-                                    <span className='border-2 active:border-green-500 active:text-green-500 px-1.5 py-.5 rounded-xl'>
-                                        {servicesOpen ? <FiChevronUp /> : <FiChevronDown />}
-                                    </span>
-                                </button>
-                                {servicesOpen && (
-                                    <div className="pl-8 text-[13px] space-y-2">
-                                        <NavLink to="/a"
-                                            onClick={handleLinkClick}
-                                            className={({ isActive }) =>
-                                                isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                                    "block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white"} >
-                                            IT Consultancy
-                                        </NavLink>
-                                        <NavLink
-                                            to="/b"
-                                            onClick={handleLinkClick}
-                                            className={({ isActive }) =>
-                                                isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                                    "block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white"} >
-                                            Managed IT
-                                        </NavLink>
-                                        <NavLink
-                                            to="/c"
-                                            onClick={handleLinkClick}
-                                            className={({ isActive }) =>
-                                                isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                                    "block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white"} >
-                                            Digital Marketing
-                                        </NavLink>
-                                        <NavLink
-                                            to="/d"
-                                            onClick={handleLinkClick}
-                                            className={({ isActive }) =>
-                                                isActive ? "block px-4 py-1 rounded text-white bg-green-600" :
-                                                    "block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white"} >
-                                            Technology Training
-                                        </NavLink>
-                                    </div>
-                                )}
-                            </div> */}
 
                             <NavLink
                                 to="/about"
@@ -242,7 +163,7 @@ const Navbar = () => {
                         </div>
 
                         <div className="mt-4">
-                            <button className="px-5 py-3 text-lg  ml-4 font-semibold text-white hover:scale-105 transition duration-300 bg-[#00D8A1] rounded">
+                            <button className="px-5 py-3 text-lg ml-4 font-semibold text-white hover:scale-105 transition duration-300 bg-[#00D8A1] rounded">
                                 Kids Program
                             </button>
                         </div>

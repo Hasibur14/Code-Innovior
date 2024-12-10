@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
-import { BiSolidPhoneCall } from "react-icons/bi";
 import { GoDownload } from "react-icons/go";
 import { FaCalendarCheck } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import bgImg from "../../assets/Courses/available.png"
+import bgImg from "../../assets/Courses/available.png";
+import BookFreeClassModal from "../Modal/BookFreeClassModal";
+import CurriculumModal from "../Modal/CurriculumModal";
+import CourseCurriculum from "../../assets/Courses/Codeinnovior_Curriculum.pdf"
 
 const AvailableCourse = () => {
-    const [callButtonExpanded, setCallButtonExpanded] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
 
     const images = [
         "https://i.postimg.cc/JtwYyJmV/257230903-2133476323485317-8240935452027283122-n.jpg",
@@ -26,21 +29,31 @@ const AvailableCourse = () => {
         return () => clearInterval(interval);
     }, [images.length]);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCallButtonExpanded((prev) => !prev);
-        }, 2000); // Toggle every 2 seconds
-        return () => clearInterval(interval);
-    }, []);
+    // Functions to open/close modals
+    const openBookingModal = () => setIsModalOpen(true);
+    const closeBookingModal = () => setIsModalOpen(false);
+
+    const openDownloadModal = () => setIsDownloadModalOpen(true);
+    const closeDownloadModal = () => setIsDownloadModalOpen(false);
+
+    // Handle curriculum download
+    const handleDownload = () => {
+        const curriculumUrl = "";
+        const link = document.createElement('a');
+        link.href = curriculumUrl;
+        link.download = "Codeinnovior_Curriculum.pdf"; 
+        link.click(); 
+        closeDownloadModal(); // Close the modal after download starts
+    };
 
     return (
         <div
-            className="bg-cover bg-center text-white  px-2 font-mondo py-20 "
+            className="bg-cover bg-center text-white px-2 font-mondo py-20 "
             style={{
                 backgroundImage: `url(${bgImg})`,
             }}
         >
-            <div className=" py-10 px-4 rounded-lg shadow-lg">
+            <div className="py-10 px-4 rounded-lg shadow-lg">
                 <div className="container mx-auto lg:max-w-7xl">
                     {/* Content Section */}
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -55,7 +68,10 @@ const AvailableCourse = () => {
                             </p>
 
                             <div className="md:flex gap-10 space-y-5 md:space-y-0">
-                                <button className="relative inline-block px-4 py-2 font-medium group">
+                                <button
+                                    onClick={openBookingModal}
+                                    className="relative inline-block px-4 py-2 font-medium group"
+                                >
                                     <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-blue-800 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded"></span>
                                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#2e60ac] to-[#0d72d2] border-none  group-hover:bg-blue-500 rounded"></span>
                                     <span className="relative flex gap-4 text-white py-3">
@@ -63,9 +79,12 @@ const AvailableCourse = () => {
                                         Book a Free Class
                                     </span>
                                 </button>
-                                <button className="relative inline-block px-4 py-2 font-medium group">
-                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0  rounded"></span>
-                                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white  rounded"></span>
+                                <button
+                                    onClick={openDownloadModal}
+                                    className="relative inline-block px-4 py-2 font-medium group"
+                                >
+                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded"></span>
+                                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white rounded"></span>
                                     <span className="relative text-black flex gap-2 py-3">
                                         <GoDownload className="text-xl" />
                                         Download Curriculum
@@ -90,7 +109,6 @@ const AvailableCourse = () => {
                     <div>
                         <h3 className="text-2xl font-bold mb-4 mt-8 font-mono">Our Location:</h3>
                         <div className="md:flex justify-between mt-10 space-y-10 md:space-y-0">
-
                             <a
                                 href="https://maps.app.goo.gl/vhymLJZ8zbAjU4CC6"
                                 target="_blank"
@@ -109,22 +127,22 @@ const AvailableCourse = () => {
                                     <FaLongArrowAltRight className="text-2xl md:ml-5" />
                                 </div>
                             </a>
-
-                            <button
-                                className={`flex items-center justify-center gap-2 text-white shadow-lg transition-all duration-1000 ${callButtonExpanded
-                                    ? "w-60 h-20 rounded-l-full rounded-tr-full bg-gradient-to-r from-green-400 to-green-600"
-                                    : "w-16 h-16 rounded-full bg-gradient-to-r from-green-400 to-green-600"
-                                    }`}
-                                onClick={() => alert("Call for details")}
-                            >
-                                <BiSolidPhoneCall className="text-2xl" />
-                                {callButtonExpanded && <span className="text-center text-xl  font-mondo">Call for Details</span>}
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div >
+
+            {/* Booking Modal */}
+            {isModalOpen &&
+                <BookFreeClassModal
+                    closeBookingModal={closeBookingModal} />}
+
+            {/* Download Curriculum Modal */}
+            {isDownloadModalOpen &&
+                <CurriculumModal
+                    handleDownload={handleDownload}
+                    closeDownloadModal={closeDownloadModal} />}
+        </div>
     );
 };
 

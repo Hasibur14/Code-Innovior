@@ -7,7 +7,7 @@ import webDev from "../../../assets/webDev.mp4";
 const OurCourse = () => {
     return (
         <div
-            className="relative w-full h-[2150px]"
+            className="relative w-full h-[2150px] mt-20 "
             style={{
                 backgroundImage: `url(${courseBg})`,
                 backgroundSize: 'cover',
@@ -15,7 +15,7 @@ const OurCourse = () => {
             }}
         >
             <div className="absolute inset-0">
-                <h2 className="font-mono py-10 md:py-20 text-3xl text-center md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
+                <h2 className="font-mono mt-10 text-3xl text-center md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
                     Our Courses_
                 </h2>
 
