@@ -108,7 +108,7 @@ const Success = () => {
                             type="text"
                             value={searchQuery}
                             placeholder="Search by any field"
-                            className="mt-2 block w-full px-5 py-4 rounded-lg text-gray-900 shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none border-2 border-gray-300"
+                            className="mt-2 block w-full px-5 py-4 rounded-lg text-gray-900 shadow-md focus:ring-2 focus:ring-[#09cd9c] bg-gray-200 focus:outline-none border-2 border-gray-300"
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </div>
@@ -117,7 +117,7 @@ const Success = () => {
                     <div className="w-full">
                         <label className="text-sm font-semibold text-gray-300">Batch</label>
                         <select
-                            className="mt-2 block w-full px-5 py-4 text-gray-900 border-2 border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                            className="mt-2 block w-full px-5 py-4 text-gray-900 border-2 border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-[#09cd9c] bg-gray-200 focus:outline-none"
                             value={selectedBatch}
                             onChange={(e) => handleFilterChange(e.target.value)}
                         >
@@ -137,7 +137,7 @@ const Success = () => {
                             id="rowsPerPage"
                             value={rowsPerPage}
                             onChange={handleRowsPerPageChange}
-                            className="mt-2 block w-full px-5 py-4 text-gray-900 border-2 border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                            className="mt-2 block w-full px-5 py-4 text-gray-900 border-2 border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-[#09cd9c] bg-gray-200 focus:outline-none"
                         >
                             <option value={6}>6</option>
                             <option value={12}>12</option>
