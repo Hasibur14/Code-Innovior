@@ -94,7 +94,7 @@ const MeetOurTeam = () => {
             {
                 name: "Tarif Khan",
                 nickName: "Tarif",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/FsB3J4F9/IMG-20240714-031040-049-removebg-preview-1-3.png",
                 designation: "UX/UI Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -116,7 +116,7 @@ const MeetOurTeam = () => {
             {
                 name: "Tasnim Tanim",
                 nickName: "Tanim",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/L8gftbhj/IMG-20240714-031040-049-removebg-preview-1-2.png",
                 designation: "Cyber Security Analyst",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -127,7 +127,7 @@ const MeetOurTeam = () => {
             {
                 name: "Mahabub Jamil",
                 nickName: "Mahbub",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/tg062NVw/IMG-20240714-031040-049-removebg-preview-1-1.png",
                 designation: "SQA",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -148,7 +148,7 @@ const MeetOurTeam = () => {
             {
                 name: "Jhumur Chakma",
                 nickName: "Jhumur",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.ibb.co.com/F8hLYMz/file-1.png",
                 designation: "HR & General",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -159,7 +159,7 @@ const MeetOurTeam = () => {
             {
                 name: "Mahabub Jamil",
                 nickName: "Mahbub",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/tg062NVw/IMG-20240714-031040-049-removebg-preview-1-1.png",
                 designation: "Business Devlopment & Strategy Analyst",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",

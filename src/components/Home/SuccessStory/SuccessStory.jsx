@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -10,6 +10,15 @@ import successBg from "../../../assets/success.png";
 const SuccessStory = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedTestimonial, setSelectedTestimonial] = useState(null);
+    const [successStory, setSuccessStory] = useState([]);
+
+    useEffect(() => {
+        fetch("/success.json")
+            .then((res) => res.json())
+            .then((data) => {
+                setSuccessStory(data);
+            });
+    }, []);
 
     const bgColors = [
         "from-[#5D3619] to-[#120818]",
@@ -68,13 +77,14 @@ const SuccessStory = () => {
                             1024: { slidesPerView: 4, spaceBetween: 20 },
                             1500: { slidesPerView: 5, spaceBetween: 20 },
                         }} >
-                        {dataInfo?.map((testimonial, index) => (
+                        {successStory?.map((testimonial, index) => (
+                            // card 
                             <SwiperSlide
                                 key={testimonial.id}
                                 className={`w-[350px] h-[600px] bg-gradient-to-r ${bgColors[index % 4]} text-white rounded-lg p-8 flex flex-col justify-between`}
                             >
                                 {/* Top Section */}
-                                <div>
+                                <div className="flex-grow">
                                     <div className="flex justify-between items-center">
                                         <FaQuoteLeft className="text-3xl opacity-50" />
                                         <span className="font-mono px-3 py-1 bg-gradient-to-r from-[#c145a8] to-[#d7065a] rounded text-[15px]">
@@ -106,6 +116,7 @@ const SuccessStory = () => {
                                     </div>
                                 </div>
                             </SwiperSlide>
+
                         ))}
                     </Swiper>
                 </div>
@@ -122,98 +133,3 @@ const SuccessStory = () => {
 };
 
 export default SuccessStory;
-
-
-const dataInfo = [
-    {
-        "id": 1,
-        "name": "Mahabub Saki",
-        "title": "Front End Developer",
-        "company": "S7works",
-        "batch": "Batch 5",
-        "message": "They helped me build my portfolio and LinkedIn profile. During the course, I learned valuable skills that boosted my confidence. I now feel equipped to tackle real-world challenges.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Md. Moniruzzaman",
-        "title": "Software Engineer",
-        "company": "Newtech technology",
-        "batch": "Batch 5",
-        "message": "Enrolling in this course was the best decision of my life. As a non-CSE student, I gained practical knowledge and experience. The support from the Phero team, especially Jhankai bhai, was invaluable.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 3,
-        "name": "Md. Adnan Shafiq",
-        "title": "Support Engineer",
-        "company": "Dorik",
-        "batch": "Batch 9",
-        "message": "I don’t have an interesting story, but the controlled and reward-based delivery system helped me stay on track. It encouraged me to push my limits and meet deadlines. I am now more productive than ever.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 4,
-        "name": "Md. Solaiman",
-        "title": "Front End Developer",
-        "company": "bdCalling IT",
-        "batch": "Batch 9",
-        "message": "সত্যি কথা বলতে, আমার জীবনের গতিপথ পরিবর্তনে সবচেয়ে বড় ভূমিকা প্রোগ্রামিং হিরো এবং তাদের শিক্ষণ পদ্ধতি। আমি খুব অল্প সময়ে অনেক কিছু শিখেছি। এর ফলে আমি আমার ক্যারিয়ারের নতুন দিগন্ত খুলতে পেরেছি।",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 5,
-        "name": "Rahul Sharma",
-        "title": "Full Stack Developer",
-        "company": "Tech Solutions",
-        "batch": "Batch 10",
-        "message": "The course structure is amazing! It took me from a beginner to a professional in just a few months. I gained hands-on experience through practical projects, which made the learning process enjoyable and effective.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 6,
-        "name": "Sarah Khan",
-        "title": "UI/UX Designer",
-        "company": "Creative Minds",
-        "batch": "Batch 8",
-        "message": "I never thought I could design user interfaces so effectively. The course guided me at every step, helping me understand user experience principles. I now create designs that truly resonate with users.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 7,
-        "name": "Ahmed Farhan",
-        "title": "Backend Developer",
-        "company": "Innovate IT",
-        "batch": "Batch 11",
-        "message": "The practical sessions and projects were incredibly useful. I learned more than just theory and can now apply my skills confidently. This course has set a solid foundation for my career.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 8,
-        "name": "Jessica Lee",
-        "title": "Data Scientist",
-        "company": "DataWorks",
-        "batch": "Batch 7",
-        "message": "The mentorship and real-world projects prepared me for my data science role at DataWorks. I learned how to analyze data effectively and derive insights. The experience was invaluable for my career.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 9,
-        "name": "Samuel Wright",
-        "title": "DevOps Engineer",
-        "company": "CloudSphere",
-        "batch": "Batch 6",
-        "message": "Amazing experience! The hands-on labs gave me the confidence to manage cloud infrastructure effectively. I feel well-prepared for the challenges of a DevOps role. This training has truly transformed my skill set.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-    {
-        "id": 10,
-        "name": "Maria Gomez",
-        "title": "Frontend Developer",
-        "company": "PixelPerfection",
-        "batch": "Batch 12",
-        "message": "With their help, I was able to land my dream job as a frontend developer at PixelPerfection. The skills I acquired during the course were directly applicable in my interviews. I am grateful for this opportunity.",
-        "image": "https://i.postimg.cc/vm5mnvSj/images.jpg"
-    },
-
-];
