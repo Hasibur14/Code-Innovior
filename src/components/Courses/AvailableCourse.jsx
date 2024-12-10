@@ -5,8 +5,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import bgImg from "../../assets/Courses/available.png";
 import BookFreeClassModal from "../Modal/BookFreeClassModal";
-import CurriculumModal from "../Modal/CurriculumModal";
-import CourseCurriculum from "../../assets/Courses/Codeinnovior_Curriculum.pdf"
+import CurriculumModal from "../Modal/CurriculumModal"
+import CourseCurriculum from "../../assets/Courses/Codeinnovior_Curriculum.pdf";
 
 const AvailableCourse = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,12 +38,13 @@ const AvailableCourse = () => {
 
     // Handle curriculum download
     const handleDownload = () => {
-        const curriculumUrl = "";
-        const link = document.createElement('a');
-        link.href = curriculumUrl;
-        link.download = "Codeinnovior_Curriculum.pdf"; 
-        link.click(); 
-        closeDownloadModal(); // Close the modal after download starts
+        const link = document.createElement("a");
+        link.href = CourseCurriculum; 
+        link.download = "Codeinnovior_Curriculum.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        closeDownloadModal();
     };
 
     return (
