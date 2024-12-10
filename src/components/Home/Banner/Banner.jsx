@@ -6,7 +6,7 @@ const Banner = () => {
         <div
             className="relative flex items-center max-w-full justify-center h-[800px] md:h-[1180px] bg-cover bg-center"
             style={{ backgroundImage: `url(${bgImage})` }} >
-            <div className="relative z-10 font-mono text-center text-white mb-60">
+            <div className="relative z-10 font-mono text-center text-white md:mb-60 ">
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-12">
                     Let's Innovate_Your Profession
                 </h1>

@@ -63,7 +63,7 @@ const Faq = () => {
                     ))}
                 </div>
 
-                <div className="lg:w-1/2">
+                <div className="lg:w-1/2 mt-14 lg:mt-0">
                     <img
                         src="https://i.postimg.cc/nL74JPJn/Rectangle-39.png"
                         alt="Team photo"

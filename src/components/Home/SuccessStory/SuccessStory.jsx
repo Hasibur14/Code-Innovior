@@ -51,7 +51,6 @@ const SuccessStory = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 width: '100%',
-                height: '1064px',
             }}
         >
             <div className="flex justify-center items-center space-y-4">
@@ -78,7 +77,7 @@ const SuccessStory = () => {
                             1500: { slidesPerView: 5, spaceBetween: 20 },
                         }} >
                         {successStory?.map((testimonial, index) => (
-                            // card 
+                            // card
                             <SwiperSlide
                                 key={testimonial.id}
                                 className={`w-[350px] h-[600px] bg-gradient-to-r ${bgColors[index % 4]} text-white rounded-lg p-8 flex flex-col justify-between`}

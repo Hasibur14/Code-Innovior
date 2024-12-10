@@ -47,7 +47,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0">
                         <Link to="/">
                             <img
-                                className='w-72 transition-opacity duration-3000'
+                                className='w-56 md:w-72 transition-opacity duration-3000'
                                 src={logo}
                                 alt="logo" />
                         </Link>

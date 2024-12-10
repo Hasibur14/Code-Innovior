@@ -93,7 +93,7 @@ const Footer = () => {
             <div className="container mx-auto md:flex px-4 justify-between">
                 <div className="mb-4 md:mb-0 lg:w-1/3 space-y-6">
                     <img
-                        className='w-80'
+                        className='w-60 md:w-80'
                         src={logo1}
                         alt="code innovior"
                     />

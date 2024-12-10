@@ -213,7 +213,7 @@ const Success = () => {
                 </div>
 
                 {/* Pagination */}
-                <div className="flex justify-center  gap-10 items-center mt-6">
+                <div className="flex justify-center gap-1 md:gap-10 items-center mt-6">
                     <button
                         onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                         disabled={currentPage === 1}
@@ -222,7 +222,7 @@ const Success = () => {
                             : "bg-blue-500 text-white hover:bg-blue-600"
                             }`}
                     >
-                        <FaLongArrowAltLeft />   Previous
+                        <FaLongArrowAltLeft className="hidden md:block" />   Previous
                     </button>
                     <div className="flex gap-2">
                         {Array.from({ length: totalPages }).map((_, pageIndex) => (
@@ -246,7 +246,7 @@ const Success = () => {
                             : "bg-blue-500 text-white hover:bg-blue-600"
                             }`}
                     >
-                        Next <FaLongArrowAltRight />
+                        Next <FaLongArrowAltRight className="hidden md:block" />
                     </button>
                 </div>
             </div>

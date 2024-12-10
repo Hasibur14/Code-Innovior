@@ -7,7 +7,7 @@ import webDev from "../../../assets/webDev.mp4";
 const OurCourse = () => {
     return (
         <div
-            className="relative w-full h-[2150px] mt-20 "
+            className="relative w-full h-[2250px] md:h-[2150px]  mt-20 "
             style={{
                 backgroundImage: `url(${courseBg})`,
                 backgroundSize: 'cover',

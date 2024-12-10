@@ -14,7 +14,7 @@ const SuccessBanner = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
             {/* Text */}
-            <h1 className="relative text-white text-4xl font-bold z-10">
+            <h1 className="relative text-white text-2xl md:text-4xl font-bold z-10">
                 Successful Students List
             </h1>
         </div>
