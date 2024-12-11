@@ -49,7 +49,7 @@ const AvailableCourse = () => {
 
     return (
         <div
-            className="bg-cover bg-center text-white px-2 font-mondo py-20 "
+            className="bg-cover bg-center text-white px-2 font-mondo pt-20 "
             style={{
                 backgroundImage: `url(${bgImg})`,
             }}
