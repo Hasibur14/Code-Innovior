@@ -133,7 +133,7 @@ const Footer = () => {
                         : "w-16 h-16 rounded-full bg-gradient-to-r from-[#00D8A1] to-[#064837]"
                         }`}>
                     <BiSolidPhoneCall className="text-xl" />
-                    {callButtonExpanded && <span className="text-center text-md  font-mondo">Call for Details</span>}
+                    {callButtonExpanded && <span className="text-center text-md  font-mondo">Call Us</span>}
                 </button>
             </div>
         </footer>
