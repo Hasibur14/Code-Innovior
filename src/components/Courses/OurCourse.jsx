@@ -1,13 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaCalendarCheck, FaGetPocket } from "react-icons/fa";
-import { GoDownload } from "react-icons/go";
 import { SiSololearn } from "react-icons/si";
+import BookFreeClassModal from "../Modal/BookFreeClassModal";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const OurCourse = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const wrapperRef = useRef(null);
     const headerRef = useRef(null);
     const cardsRef = useRef([]);
@@ -40,16 +43,21 @@ const OurCourse = () => {
         };
     }, []);
 
+
+    const openBookingModal = () => setIsModalOpen(true);
+    const closeBookingModal = () => setIsModalOpen(false);
+
     const bgColors = [
+        "from-[#205960] to-[#012327]",
         "from-[#5D3619] to-[#261100]",
         "from-[#1D0D64] to-[#0F0620]",
-        "from-[#205960] to-[#012327]",
         "from-[#5F0D67] to-[#15061F]",
+
     ];
 
     const courseData = [
         {
-            title: 'Web Developer',
+            title: 'Web Development',
             subtitle: 'Master Design with Hands-On Projects',
             features: [
                 'Hands-on Projects with Expert Mentors (Real World Projects)',
@@ -96,13 +104,13 @@ const OurCourse = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-t from-[#1e493e] to-[#01110d] font-mondo">
+        <div className="bg-gradient-to-t from-[#21112a] to-[#01110d] font-mondo">
             <div ref={headerRef}></div>
-            <div className="container mx-auto max-w-6xl  to-[#012327]">
+            <div className="container mx-auto max-w-6xl  to-[#012327] pt-10">
                 <div className="w-full items-center justify-center  mt-28">
-                    <h2
-                        className="text-2xl md:text-4xl lg:text-6xl  text-rose-500 uppercase  text-center font-mono">
-                        our Course_</h2>
+                    <h2 className="text-3xl md:text-5xl lg:text-7xl text-center f font-mono text-rose-500">
+                        Our Course_
+                    </h2>
                     <p className="text-xl font-mono text-white text-center mt-5">Empowering Minds Through Innovative Learning</p>
                 </div>
                 <div ref={wrapperRef} className="wrapper relative">
@@ -132,7 +140,9 @@ const OurCourse = () => {
                                         </ul>
 
                                         <div className="md:flex gap-10 space-y-5 md:space-y-0">
-                                            <button className="relative inline-block px-4 py-1 font-medium group">
+                                            <button
+                                                onClick={openBookingModal}
+                                                className="relative inline-block px-4 py-1 font-medium group">
                                                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-blue-800 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-lg"></span>
                                                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#2e60ac] to-[#0d72d2] border-none group-hover:bg-blue-500 rounded-lg"></span>
                                                 <span className="relative flex gap-4 text-white py-2">
@@ -140,14 +150,16 @@ const OurCourse = () => {
                                                     Book a Free Class
                                                 </span>
                                             </button>
-                                            <button className="relative inline-block px-4 py-1 font-medium group">
-                                                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-lg"></span>
-                                                <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white rounded-lg"></span>
-                                                <span className="relative text-black flex gap-2 py-2">
-                                                    <SiSololearn className="text-lg" />
-                                                    Lear More
-                                                </span>
-                                            </button>
+                                            <Link to="/">
+                                                <button className="relative inline-block px-4 py-1 font-medium group mt-5 lg:mt-0">
+                                                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-neutral-400 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-lg"></span>
+                                                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-neutral-300 group-hover:bg-white rounded-lg"></span>
+                                                    <span className="relative text-black flex gap-2 py-2">
+                                                        <SiSololearn className="text-lg" />
+                                                        Lear More
+                                                    </span>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -167,6 +179,9 @@ const OurCourse = () => {
                     </div>
                 </div>
             </div>
+            {isModalOpen &&
+                <BookFreeClassModal
+                    closeBookingModal={closeBookingModal} />}
         </div>
     );
 };

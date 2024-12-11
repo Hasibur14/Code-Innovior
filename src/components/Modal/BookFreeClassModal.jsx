@@ -19,13 +19,13 @@ const BookFreeClassModal = ({ closeBookingModal }) => {
                             <button
                                 type="button"
                                 onClick={closeBookingModal}
-                                className="px-4 py-2 bg-gray-400 hover:bg-gray-500 text-white rounded"
+                                className="px-4 py-2 bg-transparent text-rose-500 hover:text-rose-700 hover:bg-rose-300 hover:bg-opacity-50 rounded"
                             >
                                 Cancel
                             </button>
                             <button
                                 type="submit"
-                                className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded"
+                                className="px-4 py-2 bg-gradient-to-r from-[#175244] to-[#0ac596] hover:opacity-80 text-white rounded"
                             >
                                 Book Now
                             </button>

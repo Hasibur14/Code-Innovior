@@ -43,7 +43,7 @@ const UnlockFeature = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-t from-[#1e493e] to-[#01110d] font-mondo py-10">
+        <div className="bg-gradient-to-t from-[#1e493e] to-[#01110d] font-mondo py-5">
             <div className="container mx-auto  mt-20">
                 <div className="w-full flex items-center justify-center my-20">
                     <h2
