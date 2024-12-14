@@ -12,8 +12,7 @@ const OurCourse = () => {
                 backgroundImage: `url(${courseBg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-            }}
-        >
+            }}>
             <div className="absolute inset-0">
                 <h2 className="font-mono mt-10 text-3xl text-center md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
                     Our Courses_

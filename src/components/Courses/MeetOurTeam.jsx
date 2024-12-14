@@ -247,7 +247,7 @@ const MeetOurTeam = () => {
                                     className="relative bg-gradient-to-t from-[#160f25] to-[#1e493e] rounded-lg overflow-hidden group"
                                 >
                                     <h1
-                                        className="font-sans text-2xl uppercase text-center opacity-30 mt-5"
+                                        className="font-sans text-2xl uppercase text-center opacity-30 group-hover:opacity-0 transition-all duration-1000 mt-5"
                                         style={{
                                             fontSize: "85px",
                                             fontWeight: 900,
@@ -261,7 +261,7 @@ const MeetOurTeam = () => {
                                     <img
                                         src={item.img}
                                         alt={item.name}
-                                        className="w-80 h-[350px] mx-auto rounded transition duration-500 transform group-hover:scale-105"
+                                        className="w-full h-[440px] mx-auto rounded transition duration-500 transform group-hover:scale-105"
                                     />
                                     <div
                                         className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#1e493e] opacity-0 group-hover:opacity-90 transition duration-500"
