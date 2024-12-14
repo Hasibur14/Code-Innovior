@@ -60,10 +60,10 @@ const OurCourse = () => {
             title: 'Web Development',
             subtitle: 'Master Design with Hands-On Projects',
             features: [
-                'Hands-on Projects with Expert Mentors (Real World Projects)',
-                'Master Design Tools and Trends (Figma, Adobe XD etc.)',
-                'User-Centered Design Workshops (wireframing, prototyping, usability testing...)',
-                'Career Support and Networking',
+                'Learn Full-Stack Development( HTML, CSS, JavaScript, ReactJs,NextJs, Node.js,ExpressJs and MongoDB.)',
+                'Build Real-World Projects(ands-on projects guided by experts.)',
+                'Advanced Coding and Problem-Solving Workshops(Algorithms, Database Management & debugging techniques.)',
+                'Career Assistance and Certification',
             ],
             image: 'https://i.postimg.cc/8P9hxbgT/monitor-1307227-1280.jpg',
         },
@@ -71,10 +71,10 @@ const OurCourse = () => {
             title: 'Cyber Security',
             subtitle: 'Master Design with Hands-On Projects',
             features: [
-                'Hands-on Projects with Expert Mentors (Real World Projects)',
-                'Master Design Tools and Trends (Figma, Adobe XD etc.)',
-                'User-Centered Design Workshops (wireframing, prototyping, usability testing...)',
-                'Career Support and Networking',
+                'Comprehensive Cyber Security Training (Real World Projects)',
+                'Hands-on Networking Labs (networking protocols, firewalls, routers, and servers)',
+                'Ethical Hacking and Security Workshops (ethical hacking, penetration testing & security auditing)',
+                'Industry Certifications and Job Assistance',
             ],
             image: 'https://i.postimg.cc/SQw6vrhk/Rectangle-37.png',
         },
@@ -87,18 +87,18 @@ const OurCourse = () => {
                 'User-Centered Design Workshops (wireframing, prototyping, usability testing...)',
                 'Career Support and Networking',
             ],
-            image: 'https://i.postimg.cc/8P9hxbgT/monitor-1307227-1280.jpg',
+            image: 'https://i.postimg.cc/MpBDj0ps/Rectangle-37-1.png',
         },
         {
             title: 'Graphics Design',
             subtitle: 'Master Design with Hands-On Projects',
             features: [
-                'Hands-on Projects with Expert Mentors (Real World Projects)',
-                'Master Design Tools and Trends (Figma, Adobe XD etc.)',
-                'User-Centered Design Workshops (wireframing, prototyping, usability testing...)',
-                'Career Support and Networking',
+                'Master Design Tools and Techniques (Photoshop, Illustrator)',
+                'Creative Projects and Portfolio Building (logos, posters etc.)',
+                'Workshops on Design Principles(color theory, typography, layout design...)',
+                'Career Support and Freelance Guidance',
             ],
-            image: 'https://i.postimg.cc/8P9hxbgT/monitor-1307227-1280.jpg',
+            image: 'https://i.postimg.cc/qMSwRD4h/Rectangle-37-2.png',
         },
 
     ];
@@ -169,7 +169,7 @@ const OurCourse = () => {
                                             <img
                                                 src={item.image}
                                                 alt="Slider"
-                                                className={`w-full h-60 md:h-96 object-cover bg-gradient-to-l ${bgColors[index % 4]}  opacity-70 hover:opacity-100 transition-all duration-500 p-5 rounded-2xl `}
+                                                className={`w-full h-60 md:h-96 object-cover bg-gradient-to-l ${bgColors[index % 4]}  opacity-80 hover:opacity-100 transition-all duration-500 p-5 rounded-2xl `}
                                             />
                                         </div>
                                     </div>

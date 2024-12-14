@@ -39,7 +39,7 @@ const AvailableCourse = () => {
     // Handle curriculum download
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = CourseCurriculum; 
+        link.href = CourseCurriculum;
         link.download = "Codeinnovior_Curriculum.pdf";
         document.body.appendChild(link);
         link.click();
@@ -117,15 +117,15 @@ const AvailableCourse = () => {
                                 title="View Location on Google Maps"
                                 className="transition-all duration-500"
                             >
-                                <div className="flex items-center gap-4 p-3 md:p-5 bg-neutral-700 bg-opacity-50 rounded-full border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20 transition-colors duration-500">
+                                <div className="flex items-center gap-4 p-3 md:p-5 bg-neutral-700 bg-opacity-50 rounded-full border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20 transition-colors duration-500 group">
                                     <div className="text-2xl">
-                                        <FaLocationDot className="bg-gray-600 bg-opacity-80 rounded-full w-14 h-14 p-4" />
+                                        <FaLocationDot className="bg-gray-600 bg-opacity-80 group-hover:text-[#5FEAC7] rounded-full w-14 h-14 p-4 transition-colors duration-500" />
                                     </div>
                                     <div>
                                         <p className=" md:text-lg font-bold">Mirpur DOHS, Dhaka</p>
                                         <p className="text-sm">House: 774, Road: 11, Avenue: 02</p>
                                     </div>
-                                    <FaLongArrowAltRight className="text-2xl md:ml-5" />
+                                    <FaLongArrowAltRight className="text-2xl md:ml-5 " />
                                 </div>
                             </a>
                         </div>

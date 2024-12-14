@@ -6,7 +6,7 @@ const UnlockFeature = () => {
     const features = [
         {
             image: "https://i.postimg.cc/4NPWtwtP/factory.png",
-            title: "Campus To Corporate Launchpad To Success!",
+            title: "Campus To Corporate Success!",
             description:
                 "Our program bridges the gap between academic learning and professional demands, giving you the skills and confidence to excel in the corporate world.",
         },
@@ -56,7 +56,7 @@ const UnlockFeature = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="relative px-6 md:px-14 py-4 md:py-6 bg-gradient-to-t from-[#1e493e] to-[#01221a] rounded-2xl hover:shadow-xl  transform duration-500 hover:bg-gradient-to-r hover:from-[#317b68] hover:to-[#0f4e3e] group hover:translate-y-0 group-hover:translate-y-5 transition-transform "
+                            className="relative px-6 md:px-14 py-4 md:py-6 bg-gradient-to-t from-[#1e493e] to-[#01221a] rounded-2xl hover:shadow-xl  transform duration-1000 hover:bg-gradient-to-r hover:from-[#317b68] hover:to-[#0f4e3e] group hover:translate-y-0 group-hover:translate-y-5 transition-transform h-[400px]"
                         >
                             <div
                                 className="text-4xl mb-4 transform transition-transform duration-500 group-hover:scale-110"

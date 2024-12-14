@@ -247,7 +247,7 @@ const MeetOurTeam = () => {
                                     className="relative bg-gradient-to-t from-[#160f25] to-[#1e493e] rounded-lg overflow-hidden group"
                                 >
                                     <h1
-                                        className="font-sans text-2xl uppercase text-center opacity-30 group-hover:opacity-0 transition-all duration-1000 mt-5"
+                                        className="font-sans text-2xl uppercase text-center opacity-30 group-hover:opacity-0 transition-all duration-00 mt-5"
                                         style={{
                                             fontSize: "85px",
                                             fontWeight: 900,
