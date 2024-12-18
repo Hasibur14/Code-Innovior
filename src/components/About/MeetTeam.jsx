@@ -40,7 +40,7 @@ const MeetTeam = () => {
         {
             name: "Hasibur Rahman Hasib",
             nickName: "Hasib",
-            img: "https://i.postimg.cc/d3QzZBYS/hasib1.png",
+            img: "https://i.postimg.cc/0jW2zjLD/hasib2.png",
             designation: "Full-Stack Developer",
             social: {
                 fb: "https://facebook.com",
