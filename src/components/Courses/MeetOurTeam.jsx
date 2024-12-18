@@ -65,7 +65,7 @@ const MeetOurTeam = () => {
             {
                 name: "Mizanor Rahman Mizan",
                 nickName: "Mizan",
-                img: "https://i.postimg.cc/XYhfkrBX/file.png",
+                img: "https://i.postimg.cc/VvSJwXV2/mizan.png",
                 designation: "Full-Stack Developer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -83,9 +83,9 @@ const MeetOurTeam = () => {
         ],
         "UI/UX Design": [
             {
-                name: "Supto",
+                name: "Daud Supto",
                 nickName: "Supto",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/0yS7D1Zh/supto.png",
                 designation: "UI/UX Designer",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -103,9 +103,9 @@ const MeetOurTeam = () => {
         ],
         "Graphics Design": [
             {
-                name: "Ridhi",
-                nickName: "Ridhi",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                name: "Raddia Akter Hride",
+                nickName: "Hride",
+                img: "https://i.postimg.cc/jC0SrmNJ/hridhy.png",
                 designation: "Graphic Artist",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -114,7 +114,7 @@ const MeetOurTeam = () => {
         ],
         "Cyber Security": [
             {
-                name: "Tasnim Tanim",
+                name: "Tasnim Rahman Tanim",
                 nickName: "Tanim",
                 img: "https://i.postimg.cc/L8gftbhj/IMG-20240714-031040-049-removebg-preview-1-2.png",
                 designation: "Cyber Security Analyst",
@@ -134,9 +134,9 @@ const MeetOurTeam = () => {
                 github: "https://github.com"
             },
             {
-                name: "Supto",
+                name: "Daud Supto",
                 nickName: "Supto",
-                img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+                img: "https://i.postimg.cc/0yS7D1Zh/supto.png",
                 designation: "SQA",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -148,7 +148,7 @@ const MeetOurTeam = () => {
             {
                 name: "Jhumur Chakma",
                 nickName: "Jhumur",
-                img: "https://i.ibb.co.com/F8hLYMz/file-1.png",
+                img: "https://i.postimg.cc/1tbqfWwy/file-1.png",
                 designation: "HR & General",
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -247,7 +247,7 @@ const MeetOurTeam = () => {
                                     className="relative bg-gradient-to-t from-[#160f25] to-[#1e493e] rounded-lg overflow-hidden group"
                                 >
                                     <h1
-                                        className="font-sans text-2xl uppercase text-center opacity-30 group-hover:opacity-0 transition-all duration-00 mt-5"
+                                        className="font-sans text-2xl uppercase text-center opacity-30 group-hover:opacity-0 transition-all duration-1000 mt-5"
                                         style={{
                                             fontSize: "85px",
                                             fontWeight: 900,
@@ -264,7 +264,7 @@ const MeetOurTeam = () => {
                                         className="w-full h-[440px] mx-auto rounded transition duration-500 transform group-hover:scale-105"
                                     />
                                     <div
-                                        className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#1e493e] opacity-0 group-hover:opacity-90 transition duration-500"
+                                        className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#092e24] opacity-0 group-hover:opacity-90 transition duration-500"
                                         style={{
                                             background: "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 229, 174, 0.63) 100%)",
                                         }}

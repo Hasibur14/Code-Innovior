@@ -63,11 +63,11 @@ const Faq = () => {
                     ))}
                 </div>
 
-                <div className="lg:w-1/2 mt-14 lg:mt-0">
+                <div className="lg:w-1/2 mt-14 lg:mt-10">
                     <img
-                        src="https://i.postimg.cc/nL74JPJn/Rectangle-39.png"
+                        src="https://i.postimg.cc/hvFXSXRj/teams.jpg"
                         alt="Team photo"
-                        className=" shadow-md p-5 bg-gray-500 bg-opacity-50 rounded-xl hover:scale-105 transition-all duration-1000 "
+                        className=" shadow-md p-5 bg-gray-500 hover:bg-[#0d2d24] bg-opacity-50 rounded-xl hover:scale-105 transition-all duration-1000 "
                     />
                 </div>
             </div>

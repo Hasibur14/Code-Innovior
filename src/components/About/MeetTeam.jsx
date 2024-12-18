@@ -7,7 +7,7 @@ const MeetTeam = () => {
         {
             name: "Jhumur Chakma",
             nickName: "Jhumur",
-            img: "https://i.ibb.co.com/F8hLYMz/file-1.png",
+            img: "https://i.postimg.cc/1tbqfWwy/file-1.png",
             designation: "Team Leader",
             social: {
                 fb: "https://facebook.com",
@@ -18,7 +18,7 @@ const MeetTeam = () => {
         {
             name: "Mizanor Rahman Mizan",
             nickName: "Mizan",
-            img: "https://i.postimg.cc/XYhfkrBX/file.png",
+            img: "https://i.postimg.cc/VvSJwXV2/mizan.png",
             designation: "Full-Stack Developer",
             social: {
                 fb: "https://facebook.com",
@@ -40,7 +40,7 @@ const MeetTeam = () => {
         {
             name: "Hasibur Rahman Hasib",
             nickName: "Hasib",
-            img: "https://i.postimg.cc/KYQkryrq/IMG-20240714-031040-049-removebg-preview-1.png",
+            img: "https://i.postimg.cc/d3QzZBYS/hasib1.png",
             designation: "Full-Stack Developer",
             social: {
                 fb: "https://facebook.com",
@@ -49,9 +49,9 @@ const MeetTeam = () => {
             }
         },
         {
-            name: "Supto",
+            name: "Daud Supto",
             nickName: "Supto",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+            img: "https://i.postimg.cc/0yS7D1Zh/supto.png",
             designation: "UI/UX Designer",
             social: {
                 fb: "https://facebook.com",
@@ -60,7 +60,7 @@ const MeetTeam = () => {
             }
         },
         {
-            name: "Tannim Tanim",
+            name: "Tannim Rahman Tanim",
             nickName: "Tanim",
             img: "https://i.postimg.cc/L8gftbhj/IMG-20240714-031040-049-removebg-preview-1-2.png",
             designation: "Cyber Security Analyst",
@@ -74,7 +74,7 @@ const MeetTeam = () => {
             name: "Tarif Khan",
             nickName: "Tarif",
             img: "https://i.postimg.cc/FsB3J4F9/IMG-20240714-031040-049-removebg-preview-1-3.png",
-            designation:"UI/UX Designer",
+            designation: "UI/UX Designer",
             social: {
                 fb: "https://facebook.com",
                 linkedin: "https://linkedin.com",
@@ -82,9 +82,9 @@ const MeetTeam = () => {
             }
         },
         {
-            name: "Ridhi",
-            nickName: "Ridhi",
-            img: "https://i.postimg.cc/L8X7sQ1f/removal-ai-3d5405ee-684d-4749-ac8b-1ad33ce41f0f-photo-gallery-img-02.png",
+            name: "Raddia Akter Hride",
+            nickName: "Hride",
+            img: "https://i.postimg.cc/jC0SrmNJ/hridhy.png",
             designation: "Graphic Artist",
             social: {
                 fb: "https://facebook.com",
@@ -130,7 +130,7 @@ const MeetTeam = () => {
 
                                 {/* Hover Overlay */}
                                 <div
-                                    className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#1e493e] opacity-0 group-hover:opacity-90 transition duration-500"
+                                    className="absolute inset-0 bg-gradient-to-t from-[#3c9786] to-[#011c15] opacity-0 group-hover:opacity-90 transition duration-500"
                                     style={{
                                         background:
                                             "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 229, 174, 0.63) 100%)",
