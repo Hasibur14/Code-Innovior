@@ -42,9 +42,9 @@ const Graphics = () => {
     ];
 
     return (
-        <div className="bg-black text-white  px-4">
+        <div className="text-white">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] text-center text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed opacity-80 py-5">
-                Website Development
+               Graphics Design
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-5">
                 {skills.map((skill, index) => (

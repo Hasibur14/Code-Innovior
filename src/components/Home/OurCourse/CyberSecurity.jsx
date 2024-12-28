@@ -1,37 +1,38 @@
-import React from "react";
+import React from 'react'
 
-const UiUx = () => {
+const CyberSecurity = () => {
+
     // Define the skills data
     const skills = [
         {
-            name: "Figma",
+            name: "HTML",
             description: "Learn Latest HTML.",
-            icon: "https://i.postimg.cc/VLNqSnL6/figma.png"
+            icon: "https://i.postimg.cc/pddTXLXw/html.png"
         },
         {
-            name: "Adobe Xd",
-            description: "Learn Advance Level Adobe Xd.",
-            icon: "https://i.postimg.cc/c1h74XW2/adobe.png"
+            name: "CSS",
+            description: "Learn Latest CSS.",
+            icon: "https://i.postimg.cc/JnW25GDg/css.png"
         },
         {
-            name: "Sketch",
-            description: "Learn Advance Level Figma.",
-            icon: "https://i.postimg.cc/Hn6bZs3d/sketch.png"
+            name: "JavaScript",
+            description: "Learn Latest JavaScript.",
+            icon: "https://i.postimg.cc/NjSVLNgQ/js.png"
         },
         {
-            name: "Adobe illustrator",
-            description: "Learn Mid Level Adobe illustrator.",
-            icon: "https://i.postimg.cc/4db6c19K/adoill.png"
+            name: "Tailwind CSS",
+            description: "Learn Latest Tailwind CSS Frameworks.",
+            icon: "https://i.postimg.cc/ZqNQNrRp/tailwind.png"
         },
         {
-            name: "Framer Ai",
-            description: "Learn Mid Level Framer.",
-            icon: "https://i.postimg.cc/nztKMWCb/framer.png"
+            name: "Angular.JS",
+            description: "Learn Latest Angular Frameworks.",
+            icon: "https://i.postimg.cc/pLp4WNM0/angular.png"
         },
         {
-            name: "webflow",
-            description: "Learn Advance Level Webflow.",
-            icon: "https://i.postimg.cc/j2xz4JHM/webflow.png"
+            name: "React.JS",
+            description: "Learn Latest React Frameworks.",
+            icon: "https://i.postimg.cc/yYf2C1tg/react.png"
         },
         {
             name: "Upcoming...",
@@ -43,7 +44,7 @@ const UiUx = () => {
     return (
         <div className="text-white">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] text-center text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed opacity-80 py-5">
-              UI/UX Design
+             Cyber Security
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-5">
                 {skills.map((skill, index) => (
@@ -63,7 +64,7 @@ const UiUx = () => {
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default UiUx;
+export default CyberSecurity;

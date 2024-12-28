@@ -41,7 +41,7 @@ const WebsiteDevelopment = () => {
     ];
 
     return (
-        <div className="bg-black text-white  px-4">
+        <div className="text-white">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] text-center text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed opacity-80 py-5">
                 Website Development
             </h2>
