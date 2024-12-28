@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         mondo: ['Monda', 'sans-serif'],
         mono: ['Share Tech Mono', 'monospace'],
+
       },
     },
   },
