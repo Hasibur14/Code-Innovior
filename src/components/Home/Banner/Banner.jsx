@@ -13,7 +13,7 @@ const Banner = () => {
                 style={{ backgroundImage: `url(${circle})` }}
             ></div>
             <div className="container mx-auto">
-                <div className="flex justify-between relative z-10 ">
+                <div className="lg:flex justify-between relative z-10 ">
                     <div className="space-y-10">
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
                             Turn Vision into Reality Redefine Your Learning!
@@ -51,7 +51,7 @@ const Banner = () => {
                     </div>
 
                     {/* Devices Mockups */}
-                    <div className="flex justify-center items-center gap-6 mt-10">
+                    <div className="md:flex justify-center items-center gap-6 mt-10">
                         <img
                             src={bg2}
                             alt="Laptop Mockup"
