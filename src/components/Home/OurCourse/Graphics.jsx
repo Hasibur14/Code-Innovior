@@ -5,34 +5,24 @@ const Graphics = () => {
     // Define the skills data
     const skills = [
         {
-            name: "HTML",
+            name: "Adobe illustrator",
             description: "Learn Latest HTML.",
-            icon: "https://i.postimg.cc/pddTXLXw/html.png"
+            icon: "https://i.postimg.cc/4db6c19K/adoill.png"
         },
         {
-            name: "CSS",
-            description: "Learn Latest CSS.",
-            icon: "https://i.postimg.cc/JnW25GDg/css.png"
+            name: "Adobe Photoshop",
+            description: "Learn Advance Level Adobe Photoshop.",
+            icon: "https://i.postimg.cc/RhmN75B9/photoshop.png"
         },
         {
-            name: "JavaScript",
-            description: "Learn Latest JavaScript.",
-            icon: "https://i.postimg.cc/NjSVLNgQ/js.png"
+            name: "Canva",
+            description: "Learn Basic Level Canva.",
+            icon: "https://i.postimg.cc/SsCnYQHD/canva.png"
         },
         {
-            name: "Tailwind CSS",
-            description: "Learn Latest Tailwind CSS Frameworks.",
-            icon: "https://i.postimg.cc/ZqNQNrRp/tailwind.png"
-        },
-        {
-            name: "Angular.JS",
-            description: "Learn Latest Angular Frameworks.",
-            icon: "https://i.postimg.cc/pLp4WNM0/angular.png"
-        },
-        {
-            name: "React.JS",
-            description: "Learn Latest React Frameworks.",
-            icon: "https://i.postimg.cc/yYf2C1tg/react.png"
+            name: "Adobe Express",
+            description: "Learn Basic Level Adobe Express.",
+            icon: "https://i.postimg.cc/mr0cr1pP/express.png"
         },
         {
             name: "Upcoming...",

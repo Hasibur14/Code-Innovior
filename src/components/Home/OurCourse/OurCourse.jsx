@@ -10,7 +10,7 @@ const OurCourse = () => {
 
     return (
         <div
-            className="relative w-full h-[2250px] md:h-[2550px] mt-20 font-mondo"
+            className="relative w-full h-[2250px] md:h-[2750px] mt-20 font-mondo"
             style={{
                 backgroundImage: `url(${courseBg})`,
                 backgroundSize: 'cover',
