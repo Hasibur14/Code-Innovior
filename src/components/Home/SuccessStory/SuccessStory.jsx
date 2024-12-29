@@ -54,7 +54,7 @@ const SuccessStory = () => {
             }}
         >
             <div className="flex justify-center items-center space-y-4">
-                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#CAFFF1] to-[#05B689] relative md:mb-5">
+                <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#CAFFF1] to-[#05B689] relative md:mb-5">
                     Success Story_
                     <span className="block absolute left-0 w-3/12 h-3 bg-gradient-to-r from-[#5DEDC8] to-[#005841] bottom-[-24px] md:ml-44"></span>
                 </h1>

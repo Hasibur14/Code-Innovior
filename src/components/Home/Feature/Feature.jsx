@@ -27,11 +27,11 @@ const Feature = () => {
     ];
 
     return (
-        <div className="relative w-full h-[2250px] md:h-[950px] font-mondo bg-gradient-to-t from-[#1b6462] to-black">
+        <div className="relative w-full h-[2250px] md:h-[950px] font-mondo bg-gradient-to-t from-[#061e1d] to-black">
            
             <div className="absolute inset-0">
                 <h4 className='text-center text-[#3ff0c4] uppercase'>Why we are Unique?</h4>
-                <h2 className="font-mono text-3xl text-center md:text-5xl lg:text-7xl font-bold text-white z-20">
+                <h2 className="font-mono text-3xl text-center md:text-4xl lg:text-6xl font-bold text-white z-20">
                     Unmatched Unique Features
                 </h2>
                 <p className='text-center uppercase text-gray-300 mt-10 '>Discover a range of features designed to elevate your experience, combining innovation, <br /> functionality, and uniqueness to meet your needs like never before.</p>

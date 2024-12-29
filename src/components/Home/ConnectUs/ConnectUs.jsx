@@ -8,7 +8,7 @@ const ConnectUs = () => {
             <div className="flex flex-col items-center justify-center px-4 md:px-10 lg:px-20">
                 <div className="text-center mb-10">
                     <h4 className="text-[#04fabd] uppercase">Everywhere</h4>
-                    <h2 className="font-mono text-3xl md:text-5xl lg:text-7xl font-bold text-white">
+                    <h2 className="font-mono text-3xl md:text-4xl lg:text-6xl font-bold text-white">
                         Connect with Us <br /> Anywhere, Anytime
                     </h2>
                     <p className="text-gray-300 uppercase mt-5 md:mt-10">

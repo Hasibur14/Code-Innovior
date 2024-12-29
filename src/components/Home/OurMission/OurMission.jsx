@@ -12,7 +12,7 @@ const OurMission = () => {
                     backgroundPosition: 'center',
                     marginLeft: '40px'
                 }}>
-                <h2 className="absolute mb-4 text-3xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
+                <h2 className="absolute mb-4 text-3xl md:text-4xl lg:text-6xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#CAFFF1] to-[#05B689] z-20">
                     Our Mission
                 </h2>
             </div>
