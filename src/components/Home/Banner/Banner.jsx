@@ -1,7 +1,7 @@
 import React from "react";
-import bg1 from "../../../assets/home/b1.png"; // Replace with your actual path
-import bg2 from "../../../assets/home/b2.png"; // Replace with your actual path
-import circle from "../../../assets/home/circle-2.png"
+import bg1 from "../../../assets/home/b1.png";
+import bg2 from "../../../assets/home/b2.png";
+import circle from "../../../assets/home/hero.gif"
 import { FaCalendarCheck } from "react-icons/fa";
 
 const Banner = () => {
@@ -9,11 +9,11 @@ const Banner = () => {
         <div className="relative flex items-center justify-center h-[800px] md:h-[1180px] bg-black text-white font-mono">
             {/* Backgrounds circle */}
             <div
-                className="absolute inset-0 bg-no-repeat  "
-                style={{ backgroundImage: `url(${circle})` }}
+                className="absolute inset-0 bg-no-repeat -top-[500px]"
+                style={{ backgroundImage: `url(${circle})`, backgroundSize: "700px" }}
             ></div>
             <div className="container mx-auto">
-                <div className="lg:flex justify-between relative z-10 ">
+                <div className="lg:flex justify-between relative z-10">
                     <div className="space-y-10">
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
                             Turn Vision into Reality Redefine Your Learning!
@@ -34,7 +34,7 @@ const Banner = () => {
                         </button>
 
                         {/* Stats Section */}
-                        <div className="flex  gap-10 mt-20">
+                        <div className="flex  gap-10 pt-20">
                             <div className="text-center">
                                 <p className="text-6xl ">01+</p>
                                 <p>Available Program</p>

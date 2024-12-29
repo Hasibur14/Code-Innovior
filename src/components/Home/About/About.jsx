@@ -5,7 +5,7 @@ const About = () => {
         <div>
             <div className=" text-center">
                 <h2 className="text-2xl md:text-5xl lg:text-7xl font-bold font-mono bg-clip-text text-transparent  bg-gradient-to-r from-[#CAFFF1] to-[#05B689]">
-                    Are you Worried About_Kids?
+                    Are you Worried About_Kids? 
                 </h2>
             </div>
             <div className="relative text-white md:py-16  h-[1476px] px-2 md:px-16 lg:px-24"
