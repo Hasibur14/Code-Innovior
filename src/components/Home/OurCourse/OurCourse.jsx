@@ -11,13 +11,13 @@ const OurCourse = () => {
     return (
         <div className='bg-gradient-to-t from-[#010101] to-[#061e1d]'>
             <div
-                className="relative w-full h-[2250px] md:h-[3000px] font-mondo"
+                className="relative w-full h-[3250px] md:h-[3000px] font-mondo"
                 style={{
                     backgroundImage: `url(${courseBg})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                <div className="absolute inset-0">
+                <div className="absolute inset-0 mx-4 md:mx-0">
                     <h4 className='text-[#04fabd] text-center uppercase'>Technology you learn!</h4>
                     <h2 className="font-mono text-3xl text-center md:text-4xl lg:text-6xl font-bold text-white z-20 ">
                         Shape Your Future with <br /> Advanced Skills
@@ -25,7 +25,7 @@ const OurCourse = () => {
                     <p className='text-center uppercase text-gray-300 mt-10 '>Discover a range of features designed to elevate your experience, combining innovation, <br /> functionality, and uniqueness to meet your needs like never before.</p>
 
                     {/* card section */}
-                    <section className='container mx-auto max-w-7xl px-4 md:px-8 mt-28 space-y-36'>
+                    <section className='container mx-auto max-w-7xl md:px-8 mt-28 space-y-36'>
                         <WebsiteDevelopment />
                         <UiUx />
                         <Graphics />
