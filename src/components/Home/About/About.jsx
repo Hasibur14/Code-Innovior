@@ -1,5 +1,7 @@
 import bgImage from "../../../assets/aboutKids.png";
 import mobileImage from "../../../assets/mobile.png";
+
+
 const About = () => {
     return (
         <div>

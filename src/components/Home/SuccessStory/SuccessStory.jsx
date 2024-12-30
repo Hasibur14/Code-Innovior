@@ -44,7 +44,7 @@ const SuccessStory = () => {
 
     return (
         <div
-            className="md:h-[1064px] items-center overflow-hidden font-mondo py-20 lg:py-40"
+            className="md: items-center overflow-hidden font-mondo py-28 "
             style={{
                 backgroundImage: `url(${successBg})`,
                 backgroundPosition: 'center',
@@ -60,7 +60,7 @@ const SuccessStory = () => {
                 </h1>
             </div>
             <div>
-                <div className="font-mondo mt-44">
+                <div className="font-mondo mt-20 ">
                     <Swiper
                         slidesPerView={1}
                         loop
@@ -80,38 +80,40 @@ const SuccessStory = () => {
                             // card
                             <SwiperSlide
                                 key={testimonial.id}
-                                className={`w-[350px] h-[600px] bg-gradient-to-r ${bgColors[index % 4]} text-white rounded-lg p-8 flex flex-col justify-between`}
+                                className={`w-[350px]  bg-gradient-to-r ${bgColors[index % 4]} text-white rounded-lg p-8 flex flex-col justify-between `}
                             >
-                                {/* Top Section */}
-                                <div className="flex-grow">
-                                    <div className="flex justify-between items-center">
-                                        <FaQuoteLeft className="text-3xl opacity-50" />
-                                        <span className="font-mono px-3 py-1 bg-gradient-to-r from-[#c145a8] to-[#d7065a] rounded text-[15px]">
-                                            {testimonial.batch}
-                                        </span>
+                                <div className='h-[320px]'>
+                                    {/* Top Section */}
+                                    <div className="flex-grow">
+                                        <div className="flex justify-between items-center">
+                                            <FaQuoteLeft className="text-3xl opacity-50" />
+                                            <span className="font-mono px-3 py-1 bg-gradient-to-r from-[#c145a8] to-[#d7065a] rounded text-[15px]">
+                                                {testimonial.batch}
+                                            </span>
+                                        </div>
+                                        <p className="text-justify mt-10 opacity-85">
+                                            {truncateMessage(testimonial.message)}
+                                            <span
+                                                className="text-[#fc8135] font-semibold cursor-pointer"
+                                                onClick={() => handleOpenModal(testimonial)}
+                                            >
+                                                More
+                                            </span>
+                                        </p>
                                     </div>
-                                    <p className="text-justify mt-10 opacity-85">
-                                        {truncateMessage(testimonial.message)}
-                                        <span
-                                            className="text-orange-600 cursor-pointer"
-                                            onClick={() => handleOpenModal(testimonial)}
-                                        >
-                                            More
-                                        </span>
-                                    </p>
-                                </div>
 
-                                {/* Bottom Section */}
-                                <div className="flex items-center mt-10">
-                                    <img
-                                        alt="person"
-                                        src={testimonial.image}
-                                        className="w-14 h-14 rounded-full shadow-lg"
-                                    />
-                                    <div className="ml-4">
-                                        <h2 className="text-[17px] font-semibold">{testimonial.name}</h2>
-                                        <h3 className="text-sm opacity-70">{testimonial.title}</h3>
-                                        <span className="text-[15px] opacity-90 font-mono">{testimonial.company}</span>
+                                    {/* Bottom Section */}
+                                    <div className="flex items-center mt-10">
+                                        <img
+                                            alt="person"
+                                            src={testimonial.image}
+                                            className="w-14 h-14 rounded-full shadow-lg "
+                                        />
+                                        <div className="ml-4">
+                                            <h2 className="text-[17px] font-semibold">{testimonial.name}</h2>
+                                            <h3 className="text-sm opacity-70">{testimonial.title}</h3>
+                                            <span className="text-[15px] opacity-90 font-mono">{testimonial.studentID}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>

@@ -167,12 +167,12 @@ const Success = () => {
                     {currentStories.map((success) => (
                         <div
                             key={success.id}
-                            className="font-mondo max-w-2xl md:flex gap-8 px-4 py-5 bg-gradient-to-r from-[#2f7853] to-[#013a28] rounded shadow-md hover:border border-red-500 transition-all duration-300"
+                            className="font-mondo max-w-2xl md:flex gap-8 px-4 py-5 bg-gradient-to-r from-[#2f7853] to-[#013a28] rounded shadow-md  group transition-all duration-300"
                         >
 
                             <div className="w-full md:w-4/12 flex items-center">
                                 <img
-                                    className="h-full rounded"
+                                    className="h-[220px] rounded border bg-gradient-to-r to-[#29754f]  from-[#013a28] group-"
                                     src={success.image}
                                     alt="avatar"
                                 />
@@ -180,7 +180,7 @@ const Success = () => {
                             <div className="w-full md:w-8/12 mt-5 md:mt-0">
                                 <div className="flex justify-between">
                                     <h4 className="text-lg font-bold font-mono text-white opacity-80">
-                                        {success.company}
+                                        {success.studentID}
                                     </h4>
                                     <a className="px-3 py-1 font-mono text-sm font-bold text-white transition-colors duration-300 transform bg-gradient-to-r from-[#005841] to-[#09cd9c] rounded cursor-pointer">
                                         {success.batch}
