@@ -4,7 +4,6 @@ import WebsiteDevelopment from './WebsiteDev';
 import UiUx from './UiUx';
 import Graphics from './Graphics';
 import CyberSecurity from './CyberSecurity';
-import { div } from 'framer-motion/client';
 
 
 const OurCourse = () => {
