@@ -16,13 +16,11 @@ const Empoweri = () => {
           {items.map((_, index) => (
             <React.Fragment key={index}>
               <h1
-                className="font-mondo uppercase text-[100px] font-extrabold text-white"> 
+                className="font-mondo uppercase text-[40px] md:text-[100px] font-extrabold text-white"> 
                 <span
                   style={{
-                    fontSize: "100px",
-                    fontWeight: 900,
                     color: "transparent",
-                    WebkitTextStroke: "1px white",
+                    WebkitTextStroke: "2px white",
                   }}>
                 Shaping Futures      
                  </span>

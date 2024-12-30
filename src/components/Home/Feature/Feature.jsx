@@ -27,28 +27,28 @@ const Feature = () => {
     ];
 
     return (
-        <div className="relative w-full h-[2250px] md:h-[950px] font-mondo bg-gradient-to-t from-[#061e1d] to-black">
+        <div className="relative w-full h-[1750px] md:h-[950px] font-mondo bg-gradient-to-t from-[#061e1d] to-black">
            
             <div className="absolute inset-0">
                 <h4 className='text-center text-[#3ff0c4] uppercase'>Why we are Unique?</h4>
                 <h2 className="font-mono text-3xl text-center md:text-4xl lg:text-6xl font-bold text-white z-20">
                     Unmatched Unique Features
                 </h2>
-                <p className='text-center uppercase text-gray-300 mt-10 '>Discover a range of features designed to elevate your experience, combining innovation, <br /> functionality, and uniqueness to meet your needs like never before.</p>
+                <p className='text-sm md:text-lg text-center uppercase text-gray-300 mt-10 '>Discover a range of features designed to elevate your experience, combining innovation, <br /> functionality, and uniqueness to meet your needs like never before.</p>
 
                 {/* card section */}
                 <section className='container mx-auto max-w-7xl px-4 md:px-8 mt-24'>
-                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {features.map((feature) => (
                             <div
                                 key={feature.id}
-                                className="bg-gradient-to-t from-[#165043]  to-[#012c21]  rounded-lg px-10 py-6 text-white shadow-lg transform transition-transform duration-300 relative group"
+                                className="bg-gradient-to-t from-[#165043]  to-[#011812]  rounded-lg px-10 py-6 text-white shadow-lg transform transition-transform duration-300 relative group"
                             >
                                 <img
                                     className="bg-[#135f4c] bg-opacity-50 rounded-full p-4"
                                     src={feature.icon}
                                     alt="icon" />
-                                <h3 className="text-2xl font-bold mb-5">{feature.title}</h3>
+                                <h3 className="text-2xl font-bold my-7">{feature.title}</h3>
                                 <p className="text-lg opacity-85">{feature.description}</p>
 
                                 <div className="absolute top-0 left-0 w-2/3 h-2/3 border-l-4 border-t-4 border-[#36e3b8] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
@@ -59,7 +59,7 @@ const Feature = () => {
                         ))}
                     </div>
                 </section>
-                <div>
+                <div className='mt-16 lg:mt-0'>
                     <Empoweri />
                 </div>
             </div>

@@ -13,9 +13,9 @@ const Banner = () => {
                 className="absolute inset-0 bg-no-repeat -top-[500px]"
                 style={{ backgroundImage: `url(${circle})`, backgroundSize: "700px" }}
             ></div>
-            <div className="container mx-auto lg:max-w-7xl">
-                <div className="lg:flex justify-between relative z-10">
-                    <div className="space-y-10 mx-4">
+            <div className="container mx-auto lg:max-w-7xl ">
+                <div className="lg:flex justify-between relative z-10 mx-4 md:mx-0">
+                    <div className="space-y-10">
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
                             Turn Vision into Reality Redefine Your Learning!
                         </h1>

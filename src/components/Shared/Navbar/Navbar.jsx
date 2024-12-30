@@ -54,7 +54,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Menu for larger screens */}
-                    <div className="hidden md:flex space-x-4 items-center">
+                    <div className="hidden lg:flex space-x-4 items-center">
                         <div className="nav-item">
                             <NavLink
                                 to="/"
@@ -102,7 +102,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu Icon */}
-                    <div className="md:hidden flex items-center border-1 p-1 rounded bg-[#00D8A1] hover:bg-green-400">
+                    <div className="lg:hidden flex items-center border-1 p-1 rounded bg-[#00D8A1] hover:bg-green-400">
                         <button onClick={toggleMenu}>
                             {menuOpen ? (
                                 <CgMenuRightAlt className="text-2xl text-white" />
