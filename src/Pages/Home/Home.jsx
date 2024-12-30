@@ -5,21 +5,19 @@ import Feature from "../../components/Home/Feature/Feature";
 import OurCourse from "../../components/Home/OurCourse/OurCourse";
 import OurMission from "../../components/Home/OurMission/OurMission";
 import SuccessStory from "../../components/Home/SuccessStory/SuccessStory";
-
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Home = () => {
     return (
         <div className="bg-black">
-            <div className="">
                 <Banner />
                 <Feature />
                 <OurCourse />
                 <ConnectUs />
                 <SuccessStory />
-                <OurMission />
-            </div>
+                <OurMission />  
         </div>
     );
 };

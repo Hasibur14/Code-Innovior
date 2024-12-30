@@ -7,3 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 
+::selection {
+    background-color:#046e53 !important ;
+    color: white;
+}

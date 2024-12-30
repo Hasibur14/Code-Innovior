@@ -119,7 +119,7 @@ const Navbar = () => {
                 <div className="side-menu">
                     <div className="side-menu-2">
                         <div className="flex justify-between items-center p-4">
-                            <img className='w-9/12' src={logo} alt="logo" />
+                            <img className='w-9/12' src={logo1} alt="logo" />
                             <button onClick={toggleMenu}>
                                 <FiX className="text-2xl text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white rounded" />
                             </button>

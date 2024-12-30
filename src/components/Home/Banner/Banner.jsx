@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="relative flex items-center justify-center h-[1800px] md:h-[2000px] lg:h-[1000px] bg-black text-white font-mono ">
+        <div className="relative flex items-center justify-center h-[1800px] md:h-[1500px] lg:h-[1200px] bg-black text-white font-mono ">
             {/* Backgrounds circle */}
             <div
                 className="absolute inset-0 bg-no-repeat -top-[500px]"
                 style={{ backgroundImage: `url(${circle})`, backgroundSize: "700px" }}
             ></div>
-            <div className="container mx-auto lg:max-w-7xl ">
-                <div className="lg:flex justify-between relative z-10 mx-4 md:mx-0">
+                <div className="lg:flex justify-between w-full relative z-10 mx-4 md:mx-0">
+                    <div className="w-full pl-[5%] md:pl-[10%]">
                     <div className="space-y-10">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+                        <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-4">
                             Turn Vision into Reality Redefine Your Learning!
                         </h1>
                         <p className="text-lg md:text-xl mb-6 text-[#5FEAC7]">
@@ -30,7 +30,7 @@ const Banner = () => {
                             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#2e60ac] to-[#0d72d2] border-none  group-hover:bg-blue-500 rounded"></span>
                             <span className="relative flex gap-4 text-white py-3 uppercase">
                                 <FaCalendarCheck className="text-xl" />
-                              Explore us
+                                Explore us
                             </span>
                         </Link>
 
@@ -50,22 +50,25 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <div className=" w-full md:flex justify-end">
+                    
 
                     {/* Devices Mockups */}
-                    <div className="md:flex  gap- mt-10 items-end">
                         <img
                             src={bg2}
-                             alt="Mobile Mockup"
-                            className="mt-20 "
+                            alt="Mobile Mockup"
+                            className="mt-20 md:w-[300px] lg:w-[200px] xl:w-[250px] 2xl:w-[400px]"
                         />
                         <img
                             src={bg1}
-                             alt="Laptop Mockup"
-                             className=""
+                            alt="Laptop Mockup"
+                            className="lg:w-[200px] xl:w-[350px] 2xl:w-[500px]"
                         />
+                   
                     </div>
                 </div>
-            </div>
+            
         </div>
     );
 };

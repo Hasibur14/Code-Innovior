@@ -135,7 +135,8 @@ const MeetTeam = () => {
                                         background:
                                             "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 229, 174, 0.63) 100%)",
                                     }}
-                                ></div>
+                                >
+                                </div>
 
                                 {/* Content */}
                                 <div className="absolute inset-0 flex flex-col items-center justify-end opacity-0 group-hover:opacity-100 transition duration-500">

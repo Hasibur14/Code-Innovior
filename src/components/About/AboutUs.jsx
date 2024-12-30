@@ -27,7 +27,7 @@ const AboutUs = () => {
                     {/* Location Section */}
                     <div className="mt-20 flex justify-center">
                         <a
-                            href="https://maps.app.goo.gl/vhymLJZ8zbAjU4CC6"
+                            href="https://maps.app.goo.gl/1EBKTQmCRyHUFoRT8"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="View Location on Google Maps"

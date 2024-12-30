@@ -4,7 +4,7 @@ import { div } from 'framer-motion/client';
 
 const ConnectUs = () => {
     return (
-        <div className='bg-gradient-to-l to-[#03a882] from-[#014f3b] pt-16 '>
+        <div className='bg-gradient-to-l to-[#026d54] from-[#0a261f] pt-16 '>
             <div className="flex flex-col items-center justify-center px-4 md:px-10 lg:px-20">
                 <div className="text-center mb-10">
                     <h4 className="text-[#04fabd] uppercase">Everywhere</h4>

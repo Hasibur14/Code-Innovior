@@ -43,14 +43,15 @@ const CyberSecurity = () => {
 
     return (
         <div className="text-white">
-           <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#228065] to-[#04fabd] text-center text-xl md:text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed border-gray-400 opacity-80 py-5">
-               Cyber Security
+            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#228065] to-[#04fabd] text-center text-xl md:text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed border-gray-400 opacity-80 py-5">
+                Cyber Security
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="bg-gradient-to-br from-black via-black to-[#04503d] p-6 rounded-lg shadow-md  hover:shadow-[#326158] flex flex-col items-center hover:bg-gradient-to-bl hover:from-black hover:via-black hover:to-[#01261d] transition-colors duration-500 " >
+                        className="bg-gradient-to-br from-black via-black to-[#04503d] p-6 rounded-lg shadow-md  hover:shadow-[#326158] flex flex-col items-center hover:bg-gradient-to-bl hover:from-black hover:via-black hover:to-[#01261d] transition-colors duration-500 "
+                        data-aos="zoom-out">
                         {/* Skill Icon */}
                         <img
                             src={skill.icon}

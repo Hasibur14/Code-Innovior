@@ -1,7 +1,9 @@
 import React from 'react'
 import courseBg from "../../../assets/home/border.png";
 import Empoweri from './Empoweri';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Feature = () => {
 
@@ -27,8 +29,8 @@ const Feature = () => {
     ];
 
     return (
-        <div className="relative w-full h-[1750px] md:h-[950px] font-mondo bg-gradient-to-t from-[#061e1d] to-black">
-           
+        <div className="relative w-full h-[1750px] md:h-[1410px] lg:h-[950px] font-mondo bg-gradient-to-t from-[#061e1d] to-black">
+
             <div className="absolute inset-0">
                 <h4 className='text-center text-[#3ff0c4] uppercase'>Why we are Unique?</h4>
                 <h2 className="font-mono text-3xl text-center md:text-4xl lg:text-6xl font-bold text-white z-20">
@@ -43,7 +45,9 @@ const Feature = () => {
                             <div
                                 key={feature.id}
                                 className="bg-gradient-to-t from-[#165043]  to-[#011812]  rounded-lg px-10 py-6 text-white shadow-lg transform transition-transform duration-300 relative group"
-                            >
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" >
                                 <img
                                     className="bg-[#135f4c] bg-opacity-50 rounded-full p-4"
                                     src={feature.icon}

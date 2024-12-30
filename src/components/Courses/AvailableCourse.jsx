@@ -111,7 +111,7 @@ const AvailableCourse = () => {
                         <h3 className="text-2xl font-bold mb-4 mt-8 font-mono">Our Location:</h3>
                         <div className="md:flex justify-between mt-10 space-y-10 md:space-y-0">
                             <a
-                                href="https://maps.app.goo.gl/vhymLJZ8zbAjU4CC6"
+                                href="https://maps.app.goo.gl/1EBKTQmCRyHUFoRT8"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 title="View Location on Google Maps"

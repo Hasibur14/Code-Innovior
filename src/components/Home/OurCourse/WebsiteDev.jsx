@@ -49,7 +49,9 @@ const WebsiteDevelopment = () => {
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="bg-gradient-to-br from-black via-black to-[#04503d] p-6 rounded-lg shadow-md  hover:shadow-[#326158] flex flex-col items-center hover:bg-gradient-to-bl hover:from-black hover:via-black hover:to-[#01261d] transition-colors duration-500 " >
+                        className="bg-gradient-to-br from-black via-black to-[#04503d] p-6 rounded-lg shadow-md  hover:shadow-[#326158] flex flex-col items-center hover:bg-gradient-to-bl hover:from-black hover:via-black hover:to-[#01261d] transition-colors duration-500 "
+                        data-aos="fade-up"
+                        data-aos-duration="3000">
                         {/* Skill Icon */}
                         <img
                             src={skill.icon}
