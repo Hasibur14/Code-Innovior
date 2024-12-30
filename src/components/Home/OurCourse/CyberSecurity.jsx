@@ -43,10 +43,10 @@ const CyberSecurity = () => {
 
     return (
         <div className="text-white">
-           <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#228065] to-[#04fabd] text-center text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed border-gray-400 opacity-80 py-5">
+           <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#228065] to-[#04fabd] text-center text-xl md:text-3xl font-bold uppercase tracking-widest mb-8 border-b border-t border-dashed border-gray-400 opacity-80 py-5">
                Cyber Security
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-5">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-5">
                 {skills.map((skill, index) => (
                     <div
                         key={index}
@@ -55,10 +55,10 @@ const CyberSecurity = () => {
                         <img
                             src={skill.icon}
                             alt={skill.name}
-                            className="w-16 h-16 mb-4 bg-white p-3 rounded-full"
+                            className="w-12 md:w-16 h-12 md:h-16 mb-4 bg-white p-3 rounded-full"
                         />
 
-                        <h3 className="text-xl font-semibold">{skill.name}</h3>
+                        <h3 className="text-md md:text-xl font-semibold">{skill.name}</h3>
                         <p className="text-center text-sm opacity-85 mt-2">{skill.description}</p>
                     </div>
                 ))}
