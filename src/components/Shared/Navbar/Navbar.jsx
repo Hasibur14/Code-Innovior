@@ -96,7 +96,9 @@ const Navbar = () => {
                             </NavLink>
                         </div>
 
-                        <Link to="/" className="kisBtn px-5 py-3 text-lg ml-4 font-semibold text-white hover:scale-105 transition duration-300">
+                        <Link
+                            to="/kids"
+                            className="kisBtn px-5 py-3 text-lg ml-4 font-semibold text-white hover:scale-105 transition duration-300">
                             Kids Program
                         </Link>
                     </div>
@@ -163,9 +165,11 @@ const Navbar = () => {
                         </div>
 
                         <div className="mt-4">
-                            <button className="px-5 py-3 text-lg ml-4 font-semibold text-white hover:scale-105 transition duration-300 bg-[#00D8A1] rounded">
+                            <Link
+                                to="/kids"
+                                className="px-5 py-3 text-lg ml-4 font-semibold text-white hover:scale-105 transition duration-300 bg-[#00D8A1] rounded">
                                 Kids Program
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

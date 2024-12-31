@@ -6,6 +6,7 @@ import About from "../Pages/About/About";
 import Courses from "../Pages/Courses/Courses";
 import Home from "../Pages/Home/Home";
 import Success from "../Pages/Success/Success";
+import Kids from "../components/KidsProgram/Kids/Kids";
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
                 path: '/service/:id',
                 element: <>service</>,
                 loader: ({ params }) => fetch(`${import.meta.env.VITE_API_URL}/service/${params.id}`)
+            },
+            {
+                path: '/kids',
+                element: <Kids/>
             },
 
         ]
