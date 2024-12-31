@@ -13,8 +13,8 @@ const Banner = () => {
                 className="absolute inset-0 bg-no-repeat -top-[500px]"
                 style={{ backgroundImage: `url(${circle})`, backgroundSize: "700px" }}
             ></div>
-                <div className="lg:flex justify-between w-full relative z-10 mx-4 md:mx-0">
-                    <div className="w-full pl-[5%] md:pl-[10%]">
+            <div className="lg:flex justify-between w-full relative z-10 mx-4 md:mx-0">
+                <div className="w-full pl-[5%] md:pl-[10%]">
                     <div className="space-y-10">
                         <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-4">
                             Turn Vision into Reality Redefine Your Learning!
@@ -50,25 +50,26 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <div className=" w-full md:flex justify-end">
-                    
+                </div>
+                <div className=" w-full md:flex justify-end">
+
 
                     {/* Devices Mockups */}
-                        <img
-                            src={bg2}
-                            alt="Mobile Mockup"
-                            className="mt-20 md:w-[300px] lg:w-[200px] xl:w-[250px] 2xl:w-[400px]"
-                        />
-                        <img
-                            src={bg1}
-                            alt="Laptop Mockup"
-                            className="lg:w-[200px] xl:w-[350px] 2xl:w-[500px]"
-                        />
-                   
-                    </div>
+                    <img
+                        src={bg2}
+                        alt="Mobile Mockup"
+                        className="mt-20 md:w-[300px] lg:w-[200px] xl:w-[300px] 2xl:w-[400px] animate-slow-bounce"
+                    />
+
+                    <img
+                        src={bg1}
+                        alt="Laptop Mockup"
+                        className="lg:w-[200px] xl:w-[350px] 2xl:w-[500px]"
+                    />
+
                 </div>
-            
+            </div>
+
         </div>
     );
 };

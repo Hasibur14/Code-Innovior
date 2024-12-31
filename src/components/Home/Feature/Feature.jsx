@@ -45,9 +45,8 @@ const Feature = () => {
                             <div
                                 key={feature.id}
                                 className="bg-gradient-to-t from-[#165043]  to-[#011812]  rounded-lg px-10 py-6 text-white shadow-lg transform transition-transform duration-300 relative group"
-                                data-aos="flip-left"
-                                data-aos-easing="ease-out-cubic"
-                                data-aos-duration="2000" >
+                                data-aos="fade-up"
+                                data-aos-duration="3000" >
                                 <img
                                     className="bg-[#135f4c] bg-opacity-50 rounded-full p-4"
                                     src={feature.icon}
