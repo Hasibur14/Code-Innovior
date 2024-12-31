@@ -125,7 +125,7 @@ const Footer = () => {
                 </a>.
             </div>
             {/* Call Button */}
-            <div className="fixed bottom-4 right-4">
+            <div className="fixed bottom-4 right-4 z-[9999]">
                 <button
                     onClick={handleCallClick}
                     className={`flex items-center justify-center gap-2 text-white shadow-lg transition-all duration-1000 ${callButtonExpanded

@@ -9,7 +9,7 @@ import CyberSecurity from './CyberSecurity';
 const OurCourse = () => {
 
     return (
-        <div className='bg-gradient-to-t from-[#010101] to-[#061e1d]'>
+        <div className='bg-gradient-to-t from-[#010101] to-[#0a3130] '>
             <div
                 className="relative w-full h-[4600px] md:h-[3500px] lg:h-[3000px] font-mondo"
                 style={{

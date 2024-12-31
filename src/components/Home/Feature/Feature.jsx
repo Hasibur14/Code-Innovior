@@ -29,7 +29,7 @@ const Feature = () => {
     ];
 
     return (
-        <div className="relative w-full h-[1750px] md:h-[1410px] lg:h-[950px] font-mondo bg-gradient-to-t from-[#061e1d] to-black">
+        <div className="relative w-full h-[1750px] md:h-[1410px] lg:h-[950px] font-mondo bg-gradient-to-t from-[#0a3135]  to-black">
 
             <div className="absolute inset-0">
                 <h4 className='text-center text-[#3ff0c4] uppercase'>Why we are Unique?</h4>
@@ -54,9 +54,9 @@ const Feature = () => {
                                 <h3 className="text-2xl font-bold my-7">{feature.title}</h3>
                                 <p className="text-lg opacity-85">{feature.description}</p>
 
-                                <div className="absolute top-0 left-0 w-2/3 h-2/3 border-l-4 border-t-4 border-[#36e3b8] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                                <div className="absolute top-0 left-0 w-2/3 h-2/3 border-l-[6px] border-t-[6px] border-rose-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
-                                <div className="absolute bottom-0 right-0 w-2/3 h-2/3  border-r-4 border-b-4 border-[#36e3b8] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                                <div className="absolute bottom-0 right-0 w-2/3 h-2/3  border-r-[6px] border-b-[6px] border-rose-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                             </div>
 
                         ))}
