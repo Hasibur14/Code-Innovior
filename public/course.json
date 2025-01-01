@@ -31,98 +31,81 @@
       },
       {
         "mission": "3",
-        "title": "Backend Development",
+        "title": "JavaScript Essentials",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Dive deeper into JavaScript concepts like closures, promises, and async/await.",
+          "Learn DOM manipulation and event handling for interactive UIs.",
+          "Understand best practices for coding in JavaScript."
         ]
       },
       {
         "mission": "4",
-        "title": "Backend Development",
+        "title": "Introduction to React.js",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Understand the fundamentals of React.js and its component-based architecture.",
+          "Learn to manage state and props effectively.",
+          "Create dynamic and reusable components for user interfaces."
         ]
       },
       {
         "mission": "5",
-        "title": "Backend Development",
+        "title": "React DOM & Routing",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Learn to use React DOM for efficient rendering.",
+          "Implement routing with React Router for single-page applications.",
+          "Optimize navigation and user experience in React apps."
         ]
       },
       {
         "mission": "6",
-        "title": "Backend Development",
+        "title": "Advanced React.js",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Explore advanced React concepts like context, hooks, and performance optimization.",
+          "Learn state management using Redux or Context API.",
+          "Build scalable React applications with best practices."
         ]
       },
       {
         "mission": "7",
-        "title": "Backend Development",
+        "title": "Firebase Integration",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Set up Firebase for authentication and database services.",
+          "Implement secure login and registration systems.",
+          "Integrate Firebase with React for real-time data handling."
         ]
       },
       {
         "mission": "8",
-        "title": "Backend Development",
+        "title": "Node.js and Express.js Basics",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Learn the fundamentals of server-side development with Node.js.",
+          "Create RESTful APIs using Express.js.",
+          "Understand middleware and routing in Express."
         ]
       },
       {
         "mission": "9",
-        "title": "Backend Development",
+        "title": "MongoDB for Beginners",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Understand NoSQL databases and their use cases.",
+          "Learn to create, read, update, and delete data in MongoDB.",
+          "Integrate MongoDB with Node.js applications."
         ]
       },
       {
         "mission": "10",
-        "title": "Backend Development",
+        "title": "Backend Development Masterclass",
         "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
-        ]
-      },
-      {
-        "mission": "11",
-        "title": "Backend Development",
-        "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
-        ]
-      },
-      {
-        "mission": "12",
-        "title": "Backend Development",
-        "description": [
-          "Understand server-side technologies with Node.js and Express.js.",
-          "Learn database management using MongoDB.",
-          "Integrate frontend and backend for full-stack application development."
+          "Build scalable backend systems with Node.js and Express.js.",
+          "Learn advanced database management with MongoDB.",
+          "Secure APIs with authentication and authorization techniques."
         ]
       }
     ],
     "price": "5500.00",
     "discount": "28% Off"
   },
+  
   {
     "id": 2,
     "title": "Cyber Security",
@@ -161,10 +144,75 @@
           "Perform penetration testing and security auditing.",
           "Develop skills in protecting systems from cyber threats."
         ]
+      },
+      {
+        "mission": "4",
+        "title": "Cybersecurity Tools and Techniques",
+        "description": [
+          "Familiarize with tools for monitoring and defending against attacks.",
+          "Understand encryption methods for data security.",
+          "Analyze real-world case studies of security breaches."
+        ]
+      },
+      {
+        "mission": "5",
+        "title": "Advanced Cybersecurity Practices",
+        "description": [
+          "Develop strategies for incident response and disaster recovery.",
+          "Understand risk management and compliance standards.",
+          "Implement advanced firewall configurations and intrusion prevention systems."
+        ]
+      },
+      {
+        "mission": "6",
+        "title": "Cloud Security",
+        "description": [
+          "Understand the unique challenges of cloud security.",
+          "Learn best practices for securing cloud environments.",
+          "Explore tools and techniques for cloud data protection."
+        ]
+      },
+      {
+        "mission": "7",
+        "title": "Cyber Forensics",
+        "description": [
+          "Learn methods for collecting and analyzing digital evidence.",
+          "Understand the legal aspects of cyber forensics.",
+          "Gain practical experience with forensic tools."
+        ]
+      },
+      {
+        "mission": "8",
+        "title": "Mobile and IoT Security",
+        "description": [
+          "Understand vulnerabilities specific to mobile devices and IoT systems.",
+          "Learn techniques for securing mobile and IoT environments.",
+          "Explore real-world examples of mobile and IoT security breaches."
+        ]
+      },
+      {
+        "mission": "9",
+        "title": "Preparing for Industry Certifications",
+        "description": [
+          "Get guidance on obtaining certifications like CEH, CISSP, and CompTIA Security+.",
+          "Practice with mock exams and scenario-based questions.",
+          "Develop confidence for certification exams."
+        ]
+      },
+      {
+        "mission": "10",
+        "title": "Career and Job Assistance",
+        "description": [
+          "Build a strong cybersecurity portfolio.",
+          "Get resume and interview preparation support.",
+          "Connect with industry professionals and recruiters."
+        ]
       }
     ],
-    "price": "5500.00"
+    "price": "5500.00",
+    "discount": "28% Off"
   },
+  
   {
     "id": 3,
     "title": "UI/UX Design",
@@ -188,32 +236,97 @@
       },
       {
         "mission": "2",
-        "title": "Design Tools",
+        "title": "Mastering Design Tools",
         "description": [
-          "Master design tools like Figma and Adobe XD.",
+          "Get hands-on experience with tools like Figma and Adobe XD.",
           "Learn techniques for wireframing and prototyping.",
-          "Understand how to create visually appealing designs."
+          "Understand how to create visually appealing and functional designs."
         ]
       },
       {
         "mission": "3",
-        "title": "Usability Testing",
+        "title": "User Research and Analysis",
         "description": [
-          "Conduct usability testing to evaluate user experience.",
-          "Identify and resolve design issues.",
-          "Implement feedback to improve designs."
+          "Learn how to conduct user research and gather data.",
+          "Understand user personas and journey mapping.",
+          "Translate research into actionable design strategies."
+        ]
+      },
+      {
+        "mission": "4",
+        "title": "Designing Interfaces",
+        "description": [
+          "Master the art of creating intuitive and engaging interfaces.",
+          "Learn typography, color theory, and layout principles.",
+          "Create responsive designs for different devices and screen sizes."
+        ]
+      },
+      {
+        "mission": "5",
+        "title": "Prototyping and Iteration",
+        "description": [
+          "Develop prototypes to visualize and test design concepts.",
+          "Iterate designs based on feedback and usability testing.",
+          "Learn how to communicate design ideas effectively."
+        ]
+      },
+      {
+        "mission": "6",
+        "title": "Usability Testing and Feedback",
+        "description": [
+          "Conduct usability testing to evaluate the user experience.",
+          "Identify and resolve design issues to improve usability.",
+          "Incorporate feedback to refine designs."
+        ]
+      },
+      {
+        "mission": "7",
+        "title": "UX Writing and Accessibility",
+        "description": [
+          "Learn the basics of UX writing for clear and engaging communication.",
+          "Understand the principles of designing for accessibility.",
+          "Ensure inclusivity in your designs for diverse user needs."
+        ]
+      },
+      {
+        "mission": "8",
+        "title": "Advanced Design Trends",
+        "description": [
+          "Explore advanced design trends and techniques.",
+          "Learn about motion design, micro-interactions, and animations.",
+          "Apply trends to create modern and innovative designs."
+        ]
+      },
+      {
+        "mission": "9",
+        "title": "Portfolio Building",
+        "description": [
+          "Curate your best projects into a professional portfolio.",
+          "Learn how to present your work effectively to clients or employers.",
+          "Create a portfolio that reflects your unique design style."
+        ]
+      },
+      {
+        "mission": "10",
+        "title": "Career Development and Networking",
+        "description": [
+          "Prepare for UI/UX design interviews and job applications.",
+          "Learn how to network with industry professionals.",
+          "Get guidance on landing your dream job in UI/UX design."
         ]
       }
     ],
-    "price": "5500.00"
+    "price": "5500.00",
+    "discount": "25% Off"
   },
+  
   {
     "id": 4,
     "title": "Graphics Design",
     "subtitle": "Master Design with Hands-On Projects",
     "features": [
       "Master Design Tools and Techniques (Photoshop, Illustrator)",
-      "Creative Projects and Portfolio Building (logos, posters etc.)",
+      "Creative Projects and Portfolio Building (logos, posters, etc.)",
       "Workshops on Design Principles (color theory, typography, layout design...)",
       "Career Support and Freelance Guidance"
     ],
@@ -230,23 +343,88 @@
       },
       {
         "mission": "2",
-        "title": "Mastering Tools",
+        "title": "Mastering Design Tools",
         "description": [
-          "Gain proficiency in Photoshop and Illustrator.",
-          "Learn techniques for creating stunning graphics.",
-          "Work on real-world projects to build your skills."
+          "Gain proficiency in tools like Photoshop and Illustrator.",
+          "Learn techniques for creating professional-grade graphics.",
+          "Understand how to use shortcuts and plugins to enhance productivity."
         ]
       },
       {
         "mission": "3",
+        "title": "Design Principles",
+        "description": [
+          "Master color theory, typography, and layout design.",
+          "Learn how to create balanced and visually appealing designs.",
+          "Work on creative projects to reinforce design principles."
+        ]
+      },
+      {
+        "mission": "4",
+        "title": "Logo and Branding Design",
+        "description": [
+          "Learn the fundamentals of logo design and branding.",
+          "Understand how to create impactful brand identities.",
+          "Design logos, business cards, and other branding materials."
+        ]
+      },
+      {
+        "mission": "5",
+        "title": "Digital Illustrations",
+        "description": [
+          "Create stunning digital illustrations using Illustrator.",
+          "Learn advanced techniques like gradients, textures, and layers.",
+          "Work on character design, vector art, and more."
+        ]
+      },
+      {
+        "mission": "6",
+        "title": "Print Design and Packaging",
+        "description": [
+          "Design for print media such as posters, brochures, and flyers.",
+          "Understand printing specifications and file preparation.",
+          "Learn the basics of packaging design and layout."
+        ]
+      },
+      {
+        "mission": "7",
+        "title": "Social Media Graphics",
+        "description": [
+          "Create eye-catching graphics for social media platforms.",
+          "Learn to design posts, banners, and ads that drive engagement.",
+          "Explore tools for creating animations and GIFs."
+        ]
+      },
+      {
+        "mission": "8",
         "title": "Portfolio Building",
         "description": [
-          "Create a professional portfolio showcasing your work.",
-          "Learn tips for presenting designs effectively.",
-          "Explore freelancing and career opportunities in graphic design."
+          "Curate your best projects into a professional portfolio.",
+          "Learn tips for showcasing your work to potential clients.",
+          "Prepare your portfolio for freelancing or job applications."
+        ]
+      },
+      {
+        "mission": "9",
+        "title": "Freelancing and Career Opportunities",
+        "description": [
+          "Understand how to start and grow your freelancing career.",
+          "Learn how to market yourself and find clients.",
+          "Explore job opportunities in the graphic design industry."
+        ]
+      },
+      {
+        "mission": "10",
+        "title": "Advanced Techniques and Trends",
+        "description": [
+          "Stay updated on the latest graphic design trends.",
+          "Learn advanced techniques for creating innovative designs.",
+          "Work on creative projects that challenge your skills."
         ]
       }
     ],
-    "price": "5500.00"
+    "price": "5500.00",
+    "discount": "30% Off"
   }
+  
 ]
