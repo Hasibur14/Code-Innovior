@@ -112,7 +112,7 @@ const SuccessStory = () => {
                                         <div className="ml-4">
                                             <h2 className="text-[17px] font-semibold">{testimonial.name}</h2>
                                             <h3 className="text-sm opacity-70">{testimonial.title}</h3>
-                                            <span className="text-[15px] opacity-90 font-mono">{testimonial.studentID}</span>
+                                            <span className="text-[15px] opacity-90 font-mono">ID: {testimonial.studentID}</span>
                                         </div>
                                     </div>
                                 </div>

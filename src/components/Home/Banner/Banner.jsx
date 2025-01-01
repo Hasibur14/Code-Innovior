@@ -35,7 +35,7 @@ const Banner = () => {
                                     zIndex: 0,
                                 }}
                             ></span>
-                            <span className="relative z-10 p-7 text-xl font-bold text-white transition-transform transform group-hover:scale-50 group-hover:text-rose-500">
+                            <span className="relative z-10 p-7 text-xl font-bold text-white transition-all group-hover:text-rose-500">
                                 EXPLORE
                             </span>
                         </Link>
@@ -43,7 +43,7 @@ const Banner = () => {
 
                         {/* Stats Section */}
                         <div className="md:flex justify-between ">
-                            <div className="flex items-center gap-4 p-3 md:p-5 bg-neutral-700 bg-opacity-50 rounded-3xl border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20 transition-colors duration-500 group">
+                            <div className="flex items-center gap-4 p-3 md:p-5 bg-neutral-700 bg-opacity-40 rounded-3xl border-2 hover:border-[#5FEAC7] border-white hover:bg-[#5FEAC7] hover:bg-opacity-20 transition-colors duration-500 group">
                                 <div className="flex gap-3 lg:gap-4 xl:gap-5 2xl:gap-6 lg:px-10">
                                     <div className="text-center">
                                         <p className="text-3xl lg:text-4xl xl:text-4xl 2xl:text-6xl ">05+</p>

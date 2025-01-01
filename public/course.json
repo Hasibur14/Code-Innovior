@@ -1,0 +1,168 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "subtitle": "The Ultimate Full-Stack Web Development Masterclass",
+    "features": [
+      "Learn Full-Stack Development (HTML, CSS, JavaScript, ReactJs, NextJs, Node.js, ExpressJs, and MongoDB.)",
+      "Build Real-World Projects (hands-on projects guided by experts.)",
+      "Advanced Coding and Problem-Solving Workshops (Algorithms, Database Management & debugging techniques.)",
+      "Career Assistance and Certification"
+    ],
+    "image": "https://i.postimg.cc/8P9hxbgT/monitor-1307227-1280.jpg",
+    "courseOutcomes": [
+      {
+        "mission": "1",
+        "title": "Introduction to Web Development",
+        "description": [
+          "Learn the fundamentals of web development and its importance.",
+          "Understand the structure of HTML and CSS.",
+          "Get introduced to JavaScript and its role in web applications."
+        ]
+      },
+      {
+        "mission": "2",
+        "title": "Frontend Development",
+        "description": [
+          "Master HTML, CSS, and JavaScript for building responsive websites.",
+          "Learn advanced JavaScript frameworks like React.js and Next.js.",
+          "Work on real-world projects to create dynamic user interfaces."
+        ]
+      },
+      {
+        "mission": "3",
+        "title": "Backend Development",
+        "description": [
+          "Understand server-side technologies with Node.js and Express.js.",
+          "Learn database management using MongoDB.",
+          "Integrate frontend and backend for full-stack application development."
+        ]
+      }
+    ],
+    "price": "৳ 5500.00",
+    "discount": "28% Off"
+  },
+  {
+    "id": 2,
+    "title": "Cyber Security",
+    "subtitle": "Master Design with Hands-On Projects",
+    "features": [
+      "Comprehensive Cyber Security Training (Real World Projects)",
+      "Hands-on Networking Labs (networking protocols, firewalls, routers, and servers)",
+      "Ethical Hacking and Security Workshops (ethical hacking, penetration testing & security auditing)",
+      "Industry Certifications and Job Assistance"
+    ],
+    "image": "https://i.postimg.cc/SQw6vrhk/Rectangle-37.png",
+    "courseOutcomes": [
+      {
+        "mission": "1",
+        "title": "Introduction to Cyber Security",
+        "description": [
+          "Understand the basics of cybersecurity and its importance.",
+          "Learn about common security threats and vulnerabilities.",
+          "Explore the roles of cybersecurity professionals."
+        ]
+      },
+      {
+        "mission": "2",
+        "title": "Networking Basics",
+        "description": [
+          "Learn the fundamentals of networking and protocols.",
+          "Understand firewalls, routers, and server configurations.",
+          "Gain hands-on experience in setting up secure networks."
+        ]
+      },
+      {
+        "mission": "3",
+        "title": "Ethical Hacking and Security",
+        "description": [
+          "Learn ethical hacking techniques and tools.",
+          "Perform penetration testing and security auditing.",
+          "Develop skills in protecting systems from cyber threats."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design",
+    "subtitle": "Master Design with Hands-On Projects",
+    "features": [
+      "Hands-on Projects with Expert Mentors (Real World Projects)",
+      "Master Design Tools and Trends (Figma, Adobe XD etc.)",
+      "User-Centered Design Workshops (wireframing, prototyping, usability testing...)",
+      "Career Support and Networking"
+    ],
+    "image": "https://i.postimg.cc/MpBDj0ps/Rectangle-37-1.png",
+    "courseOutcomes": [
+      {
+        "mission": "1",
+        "title": "Introduction to UI/UX",
+        "description": [
+          "Learn the principles of user experience and user interface design.",
+          "Understand the importance of user-centered design.",
+          "Explore career opportunities in UI/UX design."
+        ]
+      },
+      {
+        "mission": "2",
+        "title": "Design Tools",
+        "description": [
+          "Master design tools like Figma and Adobe XD.",
+          "Learn techniques for wireframing and prototyping.",
+          "Understand how to create visually appealing designs."
+        ]
+      },
+      {
+        "mission": "3",
+        "title": "Usability Testing",
+        "description": [
+          "Conduct usability testing to evaluate user experience.",
+          "Identify and resolve design issues.",
+          "Implement feedback to improve designs."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Graphics Design",
+    "subtitle": "Master Design with Hands-On Projects",
+    "features": [
+      "Master Design Tools and Techniques (Photoshop, Illustrator)",
+      "Creative Projects and Portfolio Building (logos, posters etc.)",
+      "Workshops on Design Principles (color theory, typography, layout design...)",
+      "Career Support and Freelance Guidance"
+    ],
+    "image": "https://i.postimg.cc/qMSwRD4h/Rectangle-37-2.png",
+    "courseOutcomes": [
+      {
+        "mission": "1",
+        "title": "Introduction to Graphics Design",
+        "description": [
+          "Learn the basics of graphic design and its importance.",
+          "Understand the principles of visual communication.",
+          "Explore tools and resources for beginners."
+        ]
+      },
+      {
+        "mission": "2",
+        "title": "Mastering Tools",
+        "description": [
+          "Gain proficiency in Photoshop and Illustrator.",
+          "Learn techniques for creating stunning graphics.",
+          "Work on real-world projects to build your skills."
+        ]
+      },
+      {
+        "mission": "3",
+        "title": "Portfolio Building",
+        "description": [
+          "Create a professional portfolio showcasing your work.",
+          "Learn tips for presenting designs effectively.",
+          "Explore freelancing and career opportunities in graphic design."
+        ]
+      }
+    ]
+  }
+]

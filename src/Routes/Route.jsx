@@ -7,6 +7,7 @@ import Courses from "../Pages/Courses/Courses";
 import Home from "../Pages/Home/Home";
 import Success from "../Pages/Success/Success";
 import Kids from "../components/KidsProgram/Kids/Kids";
+import CourseDetails from "../components/Courses/CourseDetails/CourseDetails";
 
 
 const router = createBrowserRouter([
@@ -17,19 +18,26 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home/>
+                element: <Home />
             },
             {
                 path: '/about',
-                element: <About/>
+                element: <About />
             },
             {
                 path: '/courses',
-                element: <Courses/>
+                element: <Courses />
+            },
+            {
+                path: "/course-details/:id",
+                element: <CourseDetails />,
+                loader: ({ params }) => fetch(`/course.json`)
+                    .then(res => res.json())
+                    .then(data => data.find(item => item.id === Number(params.id)))
             },
             {
                 path: '/success',
-                element: <Success/>
+                element: <Success />
             },
 
             {
@@ -39,7 +47,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/kids',
-                element: <Kids/>
+                element: <Kids />
             },
 
         ]

@@ -54,9 +54,9 @@ const Feature = () => {
                                 <h3 className="text-2xl font-bold my-7">{feature.title}</h3>
                                 <p className="text-lg opacity-85">{feature.description}</p>
 
-                                <div className="absolute top-0 left-0 w-2/3 h-2/3 border-l-[6px] border-t-[6px] border-rose-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                                <div className="absolute top-0 left-0 w-2/3 h-2/3 border-l-[6px] border-t-[6px] border-[#269175] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
-                                <div className="absolute bottom-0 right-0 w-2/3 h-2/3  border-r-[6px] border-b-[6px] border-rose-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                                <div className="absolute bottom-0 right-0 w-2/3 h-2/3  border-r-[6px] border-b-[6px] border-[#2fb894] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                             </div>
 
                         ))}
