@@ -11,7 +11,7 @@ import courseDetailsBg from "../../../assets/Courses/Ellipse.png";
 
 const CourseDetails = () => {
     const courseData = useLoaderData();
-    const { title, image, courseOutcomes, price, subtitle } = courseData;
+    const { title, image, courseOutcomes, price, subtitle,discount } = courseData;
 
     return (
         <div
@@ -102,13 +102,16 @@ const CourseDetails = () => {
                 <div>
                     <div className="bg-[#FFFFFF] backdrop-blur-sm bg-opacity-5 p-6 pb-10 rounded-lg text-center">
                         <img src={image} alt="Course Banner" className="w-full rounded-md mb-6" />
-                        <h3 className="text-2xl font-semibold mb-4">{price} BDT</h3>
-                        <Link
-                            to="https://docs.google.com/forms/d/e/1FAIpQLScaznBotsVDotTS535do76sKZDcEcKXdhpPL9T5BQozJiEDqw/viewform?usp=sharing"
-                            className="bg-blue-500 px-7 py-4 rounded-md text-white hover:bg-blue-600"
+                        <h3 className="text-2xl font-semibold mb-10">{price} BDT / <span className="text-base text-rose-500">{discount} Off</span></h3>
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScaznBotsVDotTS535do76sKZDcEcKXdhpPL9T5BQozJiEDqw/viewform?usp=sharing"
+                            className="bg-blue-500 px-7 py-4 rounded-md text-white hover:bg-blue-600 "
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Enroll Now
-                        </Link>
+                        </a>
+
                         <div className="mt-10">
                             <h4 className="text-center text-[#5FEAC7] font-semibold text-lg mb-4">
                                 This course includes
